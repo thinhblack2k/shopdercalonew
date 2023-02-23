@@ -16,6 +16,10 @@
     padding-right: 10px;
 }
 
+.col-none {
+    display: none;
+}
+
 @media (min-width: 740px){
     .row {
         margin-left: -8px;
@@ -25,6 +29,11 @@
         padding-left: 8px;
         padding-right: 8px;
     }
+
+    .col-c{
+        display: flex;
+    }
+
     .col-c-1 {
         flex: 0 0 calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);
@@ -86,6 +95,10 @@
         padding-right: 12px;
     }
     
+    .col-m {
+        display: flex;
+    }
+
     .col-m-1 {
         flex: 0 0 calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);
@@ -145,6 +158,11 @@
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .col-l{
+        display: flex;
+    }
+
     .col-l-1 {
         flex: 0 0 calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);
