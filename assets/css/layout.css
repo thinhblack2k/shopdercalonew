@@ -1,19 +1,19 @@
 .container {
     max-width: 1180px;
     margin: 0 auto;
+    padding-inline: calc(var(--getter) * 2);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-inline: calc(-1 * var(--getter));
 }
 
 .col {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline: var(--getter);
+    padding: var(--getter) 0px;
 }
 
 .col-none {
@@ -22,12 +22,10 @@
 
 @media (min-width: 576px){
     .row {
-        margin-left: var(--getter-m);
-        margin-right: var(--getter-m);
+        margin-inline: calc(-1 * var(--getter));
     }
     .col {
-        padding-left: var(--getter-p);
-        padding-right: var(--getter-p);
+        padding-inline: var(--getter);
     }
 
     .col-sm{
@@ -86,12 +84,10 @@
 
 @media (min-width: 768px){
     .row {
-        margin-left: var(--getter-m);
-        margin-right: var(--getter-m);
+        margin-inline: calc(-1 * var(--getter));
     }
     .col {
-        padding-left: var(--getter-p);
-        padding-right: var(--getter-p);
+        padding-inline: var(--getter);
     }
 
     .col-md{
@@ -150,13 +146,11 @@
 
 @media (min-width: 992px) {
     .row {
-        margin-left: var(--getter-m);
-        margin-right: var(--getter-m);
+        margin-inline: calc(-1 * var(--getter));
     }
 
     .col {
-        padding-left: var(--getter-p);
-        padding-right: var(--getter-p);
+        padding-inline: var(--getter);
     }
     
     .col-lg {
@@ -213,14 +207,12 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .row {
-        margin-left: var(--getter-m);
-        margin-right: var(--getter-m);
+        margin-inline: calc(-1 * var(--getter));
     }
     .col {
-        padding-left: var(--getter-p);
-        padding-right: var(--getter-p);
+        padding-inline: var(--getter);
     }
 
     .col-xl{
