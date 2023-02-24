@@ -74,6 +74,8 @@ body {
     padding: 20px 0px;
 }
 
+.w-full
+
 .heading {
     font-family: "Lato", sans-serif;
     line-height: 1.5;
@@ -670,7 +672,25 @@ body {
     color: var(--gray-t);
     margin: 0;
 }
-/* ======================= */
+
+.banner-history {
+    padding-top: 600px;
+    background-image: url(../../assets/images/banner/banner3.png);
+    background-position: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-history .heading-1{
+    color: var(--white);
+}
+
+.banner-history p {
+    margin-top: 15px;
+    margin-bottom: 41px;
+}
 
 /* === list text image === */
 .list-text-image {
