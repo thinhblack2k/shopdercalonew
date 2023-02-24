@@ -245,7 +245,7 @@ body {
 
 /* === slider === */
 .slider {
-    padding-top: 611px; 
+    padding-top: 50%; 
     background-image: url(../../assets/images/slider/Rectangle1.jpg);
     background-position: top;
     background-position: center;
