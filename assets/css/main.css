@@ -358,6 +358,9 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.banner {
     position: relative;
 }
 
@@ -568,6 +571,17 @@ body {
     .mg-t-container {
         margin-top: calc(45px - var(--getter) * 2);
     }
+    .header__main {
+        height: 110px;
+        padding: 0 50px;
+    }
+    .header__topbar {
+        padding: 0 50px;
+    }
+    .footer__logo {
+        padding: 50px 0;
+    }
+    
 }
 
 @media (min-width: 992px) {
