@@ -624,6 +624,23 @@ body {
     text-align: center;
 }
 
+.footer__care {
+    order: 2;
+}
+
+.footer__information {
+    order: 3;
+}
+
+.footer__terms {
+    order: 4;
+}
+
+.footer__social {
+    order: 1;
+}
+
+
 /* ========================= */
 
 
@@ -695,12 +712,49 @@ body {
     .footer__logo {
         padding: 50px 0;
     }
+
+    .footer__bottom p {
+        padding: 23px 0;
+        color: var(--gray-t);
+        text-align: center;
+    }
+    
+    .footer__care {
+        order: 1;
+    }
+    
+    .footer__information {
+        order: 2;
+    }
+    
+    .footer__terms {
+        order: 4;
+    }
+    
+    .footer__social {
+        order: 3;
+    }
     
 }
 
 @media (min-width: 992px) {
     .menu__button {
         display: none;
+    }
+    .footer__care {
+        order: 1;
+    }
+    
+    .footer__information {
+        order: 2;
+    }
+    
+    .footer__terms {
+        order: 3;
+    }
+    
+    .footer__social {
+        order: 4;
     }
 }
 
