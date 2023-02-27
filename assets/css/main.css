@@ -186,12 +186,12 @@ body {
     background-color: var(--white);
 }
 
-.header__logo img {
-    
+.header__left{
+    padding: 15px 0;
 }
 
-.header__logo{
-    padding: 15px 0;
+.header__left img {
+    height: 100%;
 }
 
 .nav__items {
