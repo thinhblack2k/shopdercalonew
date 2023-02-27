@@ -687,6 +687,9 @@ body {
 
 
 /* === video text === */
+.video-text__img img {
+    width: 100%;
+}
 
 .video-text__heading {
     margin-top: 50px;
@@ -727,7 +730,7 @@ body {
    
 }
 
-.list-text-image__img {
+.list-text-image__img img {
     width: 100%;
 }
 
