@@ -306,7 +306,6 @@ body {
 .slider {
     position: relative;
     width: 100%;
-    height: 50vw;
     background-color: #262628;
 }
 
@@ -328,12 +327,9 @@ body {
     z-index: 1;
 }
 
-.slider__imgs {
+.sliders img {
     width: 100%;
-}
-
-.slider__imgs img {
-    width: 100%;
+    height: 100%;
 }
 
 .mySlides {
@@ -743,6 +739,176 @@ body {
     max-width: 500px;
     color: var(--gray-t);
 }
+/* ====================================== */
+
+/* === About Us === */
+.dealer {
+    padding: 40px 0;
+}
+
+.section__title h2 {
+    margin-bottom: 20px;
+}
+
+.section__title p {
+    color: var(--gray-t);
+}
+
+.dealer__lable,
+.dealer__input,
+.dearler__textarea {
+    display: block;
+    width: 100%;
+}
+
+.dealer__lable {
+    margin-bottom: 11px;
+}
+
+.dealer__input {
+    border: solid 1px #ECECEC;
+    background-color: var(--white);
+    height: 60px;
+    padding: 18px 20px;
+}
+
+.dearler__textarea {
+    border: solid 1px #ECECEC;
+    background-color: var(--white);
+    margin-bottom: 50px;
+    padding: 18px 20px;
+}
+
+.dealer__checkbox input {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    border: solid 1px #ECECEC;
+    background-color: var(--white);
+}
+
+.dealer__checkbox p {
+    margin-left: 20px;
+}
+
+.dealer__btn {
+    margin-top: 40px;
+    background-color: var(--black);
+    color: var(--white);
+}
+/* ================================ */
+/* === Contact === */
+
+.contact__content {
+    padding: 50px 0px;
+    border: 1px solid #ECECEC;
+}
+
+.contact__content img {
+    margin-bottom: 30px;
+}
+
+.contact__content h2 {
+    margin-bottom: 5px;
+}
+
+
+/* === care product === */
+.care-product {
+
+}
+
+.care-product__items {
+}
+
+.care-product__content {
+    border: solid 1px #ECECEC;
+    padding: 50px 40px 40px 55px;
+}
+
+.care-product__content p {
+    color: var(--gray-t);
+}
+
+.care-product__item img {
+    margin-bottom: 20px;
+}
+
+.care-product__item h3 {
+    margin-bottom: 20px;
+}
+
+.banner-care-product {
+    padding-top: 600px;
+    background-image: url(../../assets/images/slider/slider1.jpg);
+    background-position: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-care-product h2 {
+    color: var(--white);
+    margin-bottom: 27px;
+}
+
+.banner-care-product .banner__content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.banner-care-product__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* === product-care__text-image === */
+.product-care__text-image .row {
+    background-color: var(--gray-bg);
+}
+
+.product-care__text-image .col {
+    padding: 0px;
+}
+
+.product-care__text-image .content__container {
+    padding: 60px 30px;
+}
+
+.product-care__text-image button {
+    margin-top: 70px;
+}
+
+/* === collection brand === */
+.collection {
+    background-image: url(../../assets/images/slider/slider3.png);
+    width: 100%;
+    height: 37vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.collection__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.collection__content h3 {
+    width: 176px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.collection__name,
+.collection h3 {
+    color: var(--white);
+}
 
 /* === responsive === */
 @media (min-width: 576px) {
@@ -826,7 +992,34 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .list-text-image .row:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .product-care__text-image .row {
+        flex-direction: row-reverse;
+    }
+
+    .product-care__text-image .content__container {
+        padding-inline: 90px;
+    }
+
+    .product-care__text-image button {
+        margin-top: 85px;
+    }
+
+    .list-text-image .row {
+        margin-inline: -50px;
+    }
     
+    .list-text-image .row .col{
+        padding: 0 50px;
+    }
+
+    .collection__content h3{
+        width: 327px;
+        height: 48px;
+    }
 }
 
 @media (min-width: 1200px) {
