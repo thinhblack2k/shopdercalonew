@@ -88,9 +88,9 @@
         <!------------- start section slider ------------->
         <section class="slider">
             <div class="slider__arrow d-flex">
-                <img src="./assets/images/icon/arrow-left.svg" alt="trái" class="slider__arrow--left">
-                <div class="slider__arrow--center"></div>
-                <img src="./assets/images/icon/arrow-right.svg" alt="phải" class="slider__arrow--right">
+                <button class="slider__arrow--left" onclick="plusDivs(-1)"><img src="./assets/images/icon/arrow-left.svg" alt="trái" ></button>
+                <div class="slider__arrow--center flex-wide"></div>
+                <button class="slider__arrow--right" onclick="plusDivs(1)" ><img src="./assets/images/icon/arrow-right.svg" alt="phải"></button>
             </div>
             <div class="container">
                 <div class="slider__content">
@@ -98,6 +98,14 @@
                     <button class="btn slider__btn" >SHOP NOW</button>
                 </div>
             </div>
+            
+            <div class="slider__imgs">
+                <img src="./assets/images/slider/slider1.jpg" alt="slider1" class="mySlides">
+                <img src="./assets/images/banner/banner3.png" alt="slider2" class="mySlides">
+                <img src="./assets/images/slider/slider1.jpg" alt="slider3" class="mySlides">
+                <img src="./assets/images/banner/banner3.png" alt="slider4" class="mySlides">
+            </div>
+
         </section>
         <!------------- end section slider ------------->
 
