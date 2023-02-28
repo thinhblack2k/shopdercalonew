@@ -758,6 +758,7 @@ body {
 /* === brand === */
 .brand {
     background-color: var(--gray-bg);
+    width: 100%;
 }
 .brand__name{
     padding: 82px 0px;
@@ -1022,6 +1023,51 @@ body {
 
 .collection-product__content img {
     width: 100%;
+}
+
+/* === FAQ Tab === */
+.tabs h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #BABCC4;
+}
+
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--black);
+    transition: all 0.2s ease;
+}
+
+.tabs .tab-item{
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-item:hover {
+    cursor: pointer;
+    opacity: 1;
+    background-color: var(--gray-bg);
+    border-color: rgba(29, 7, 14, 0.1);
+}
+.tab-item.active h2{
+    opacity: 1;
+    color: var(--black);
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+}
+.tab-pane.active {
+    display: block;
 }
 
 /* === responsive === */
