@@ -179,7 +179,7 @@
                 <div class="text-image__items">
                     <div class="text-image__video">
                         <img class="text-image__img" src="./assets/images/banner/banner1.png" alt="">
-                        <button class="text-image__player">
+                        <button class="text-image__player" onclick="lightbox_open();">
                             <img src="./assets/images/icon/player.svg" alt="">
                         </button>
                     </div>
@@ -194,8 +194,20 @@
                         </a>
                     </div>
                 </div>
-                
             </div>
+            <div id="light">
+                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                <video id="VisaChipCardVideo" controls>
+                    <source src="./assets/video/videocamping.mp4" type="video/mp4">
+                    <!--Browser does not support <video> tag -->
+                    </video>
+                </div>
+            
+                <div id="fade" onClick="lightbox_close();"></div>
+            
+                <div>
+            </div>
+            
         </section>
         <!------------- end section text-image ------------>
 
@@ -209,7 +221,7 @@
                 </div>
                 <div class="product__items mg-t-container">
                     <div class="product__item">
-                        <div class="card">
+                        <div class="product__content">
                             <form action="">
                                 <button type="submit" class="product__wishlist">
                                     <img src="./assets/images/icon/love.svg" alt="">
@@ -226,7 +238,7 @@
                         </div>
                     </div>
                     <div class="product__item">
-                        <div class="card">
+                        <div class="product__content">
                             <form action="">
                                 <button type="submit" class="product__wishlist">
                                     <img src="./assets/images/icon/love.svg" alt="">
@@ -243,7 +255,7 @@
                         </div>
                     </div>
                     <div class="product__item">
-                        <div class="card">
+                        <div class="product__content">
                             <form action="">
                                 <button type="submit" class="product__wishlist">
                                     <img src="./assets/images/icon/love.svg" alt="">
@@ -260,7 +272,7 @@
                         </div>
                     </div>
                     <div class="product__item">
-                        <div class="card">
+                        <div class="product__content">
                             <form action="">
                                 <button type="submit" class="product__wishlist">
                                     <img src="./assets/images/icon/love.svg" alt="">
