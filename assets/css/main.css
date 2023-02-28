@@ -1041,6 +1041,10 @@ body {
     .footer__social {
         order: 3;
     }
+
+    .product__content {
+        width: 100%;
+    }
     
 }
 
@@ -1051,10 +1055,6 @@ body {
 
     .heading-4 {
         font-size: 16px;   
-    }
-
-    .product__content {
-        width: 100%;
     }
 
     .product__btn {
