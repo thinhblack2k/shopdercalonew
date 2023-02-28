@@ -215,6 +215,10 @@
         padding-inline: var(--getter);
     }
 
+    .col-xl {
+        display: flex;
+    }
+
     .col-xl{
         display: flex;
     }
