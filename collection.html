@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>collection</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
     <!------------- google font ------------->
@@ -15,184 +15,358 @@
       rel="stylesheet"
     />
     <!--------------------------------------->
-</head>
-<body>
+  </head>
+  <body>
     <div id="faq">
-        <!-- overlay -->
-        <section id="overlay"></section>
-        <!------------- start header ------------->
-        <header class="header">
-          <div class="header__topbar">
-            <div class="topbar__container">
-              <p class="topbar__heading heading heading-5">
-                FREE SHIPPING IN ITALY
+      <!-- overlay -->
+      <section id="overlay"></section>
+      <!------------- start header ------------->
+      <header class="header">
+        <div class="header__topbar">
+          <div class="topbar__container">
+            <p class="topbar__heading heading heading-5">
+              FREE SHIPPING IN ITALY
+            </p>
+            <div class="topbar-select d-flex align-center">
+              <select class="heading heading-5" name="" id="">
+                <option value="">Italian</option>
+                <option value="">Japan</option>
+                <option value="">Korea</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="header__main d-flex">
+          <a href="index.html" class="header__left">
+            <img src="./assets/images/logo/logo.png" alt="logo" />
+          </a>
+          <nav
+            class="header__nav d-flex flex-wide juistify-center align-center"
+          >
+            <ul class="nav__items align-center col-none col-xl">
+              <li class="nav__item heading heading-5">
+                <a href="collection.html">SHOP</a>
+                <ul class="subnav">
+                  <li class="heading heading-5"><a href="#">RING</a></li>
+                  <li class="heading heading-5"><a href="#">BRACELETS</a></li>
+                  <li class="heading heading-5"><a href="#">EARINGS</a></li>
+                  <li class="heading heading-5"><a href="#">NECKLACE</a></li>
+                </ul>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="history.html">OUR HISTORY</a>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="care-of-product.html">JEWELERY PRODUCTION</a>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="about.html">BECOME A DEALER</a>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <div class="menu__items d-flex">
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/search.svg" alt="icon" />
+              </a>
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/love.svg" alt="icon" />
+              </a>
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/user.svg" alt="icon" />
+              </a>
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/cart.svg" alt="icon" />
+              </a>
+              <button href="#" class="menu__item menu__button">
+                <img
+                  class="icon__menu"
+                  src="./assets/images/icon/menu.svg"
+                  alt="icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!------------- end header ------------->
+      <!------------- start section care product------------->
+      <section class="collection__banner">
+        <div class="container">
+          <div class="collection__content">
+            <h1 class="collection__name heading heading-1">RING</h1>
+            <p class="heading heading-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididu
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection__header pd-section">
+        <div class="container">
+          <div class="row">
+            <div class="col flex-wide">
+              <p class="collection__total heading heading-5">
+                There are 30 products
               </p>
-              <div class="topbar-select d-flex align-center">
-                  <select class="heading heading-5" name="" id="">
-                      <option value="">Italian</option>
-                      <option value="">Japan</option>
-                      <option value="">Korea</option>
-                  </select>
+            </div>
+            <div class="col col-lg-3"></div>
+            <div class="col d-flex text-center">
+              <div class="collection__sort d-flex">
+                <p class="heading heading-4">SORT BY : FROM A TO Z</p>
+                <img src="./assets/images/icon/dropblack.svg" alt="" />
+              </div>
+              <div class="flex-wide"></div>
+              <p class="heading heading-4">FILTER</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection-product">
+        <div class="container">
+          <div class="collection-product__items">
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+            <form action="#" class="collection-product__item">
+              <div class="collection-product__content text-center">
+                <form action="">
+                  <button type="submit" class="product__wishlist">
+                    <img src="./assets/images/icon/love.svg" alt="" />
+                  </button>
+                </form>
+                <img src="./assets/images/products/product1.png" alt="" />
+                <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                <p class="product__rice heading heading-5">$99.99</p>
+                <button class="product__btn btn">ADD TO CART</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!------------- start footer ------------->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer__logo">
+                <img src="./assets/images/logo/logo.svg" alt="logo" />
               </div>
             </div>
           </div>
-          <div class="header__main d-flex">
-            <a href="index.html" class="header__left">
-              <img src="./assets/images/logo/logo.png" alt="logo" />
-            </a>
-            <nav
-              class="header__nav d-flex flex-wide juistify-center align-center"
-            >
-              <ul class="nav__items align-center col-none col-xl">
-                <li class="nav__item heading heading-5">
-                  <a href="collection.html">SHOP</a>
-                  <ul class="subnav">
-                    <li class="heading heading-5"><a href="#">RING</a></li>
-                      <li class="heading heading-5"><a href="#">BRACELETS</a></li>
-                      <li class="heading heading-5"><a href="#">EARINGS</a></li>
-                      <li class="heading heading-5"><a href="#">NECKLACE</a></li>
-                  </ul>
+          <div class="row footer__content">
+            <div class="col col-lg-3 col-md-6 footer__care">
+              <h3 class="footer__heading heading heading-5">CUSTOMER CARE</h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a href="#" class="heading heading-5">Track your order</a>
                 </li>
-                <li class="nav__item heading heading-5">
-                  <a href="history.html">OUR HISTORY</a>
-                </li>
-                <li class="nav__item heading heading-5">
-                  <a href="care-of-product.html">JEWELERY PRODUCTION</a>
-                </li>
-                <li class="nav__item heading heading-5">
-                  <a href="about.html">BECOME A DEALER</a>
-                </li>
-                <li class="nav__item heading heading-5">
-                  <a href="contact.html">CONTACT</a>
+                <li class="footer__item">
+                  <a href="faq.html" class="heading heading-5"
+                    >Frequent Question</a
+                  >
                 </li>
               </ul>
-            </nav>
-            <div class="header__right">
-              <div class="menu__items d-flex">
-                <a href="#" class="menu__item">
-                  <img src="./assets/images/icon/search.svg" alt="icon" />
-                </a>
-                <a href="#" class="menu__item">
-                  <img src="./assets/images/icon/love.svg" alt="icon" />
-                </a>
-                <a href="#" class="menu__item">
-                  <img src="./assets/images/icon/user.svg" alt="icon" />
-                </a>
-                <a href="#" class="menu__item">
-                  <img src="./assets/images/icon/cart.svg" alt="icon" />
-                </a>
-                <button href="#" class="menu__item menu__button">
-                  <img
-                    class="icon__menu"
-                    src="./assets/images/icon/menu.svg"
-                    alt="icon"
-                  />
-                </button>
+            </div>
+            <div class="col col-lg-3 col-md-6 footer__information">
+              <h3 class="footer__heading heading heading-5">
+                LEGAL INFORMATION:
+              </h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <p class="heading heading-5">
+                    Company name: De Carlo Nicholas
+                  </p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">VAT number: 07020260480</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">REA: FI-674952</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">
+                    Registered office: Via di San Quirico a Ruballa 15, 50012,
+                    Bagno a Ripoli (FI), Italy
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-lg-3 col-md-6 footer__terms">
+              <h3 class="footer__heading heading heading-5">LEGAL TERMS:</h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <p class="heading heading-5">Informazioni legali</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">
+                    Condizioni generali di vendita
+                  </p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">Informativa sulla privacy</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">Cookie policy</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-lg-3 col-md-6 footer__social">
+              <h3 class="footer__heading heading heading-5">
+                SUBSCRIBE FOR NEWSLETTER
+              </h3>
+              <div class="footer__input">
+                <form action="">
+                  <input type="text" placeholder="Your Email" />
+                  <button type="submit">Subscribe</button>
+                </form>
               </div>
+              <h3 class="footer__heading heading heading-5">SOCIAL</h3>
+              <ul class="social__items d-flex">
+                <li>
+                  <a href="https://www.facebook.com/edricdang310"
+                    ><img
+                      src="./assets/images/icon/facebook.svg"
+                      class="social__item"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/deleteallstartagain.2k/"
+                    ><img
+                      src="./assets/images/icon/instagram.svg"
+                      class="social__item"
+                      alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/dhthinh/"
+                    ><img
+                      src="./assets/images/icon/linkedin.svg"
+                      class="social__item"
+                      alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCjzcCjVwHkngCWX-VlDtLtQ"
+                    ><img
+                      src="./assets/images/icon/youtube.svg"
+                      class="social__item"
+                      alt="youtube"
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
-        </header>
-      <!------------- end header ------------->
-        <!------------- start section care product------------->
-        <section class="collection">
-            <div class="container">
-                <div class="collection__content">
-                    <h1 class="collection__name heading heading-1">RING</h1>
-                    <h3 class="heading heading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</h3>    
-                </div>
+          <div class="row footer__bottom">
+            <div class="col">
+              <p class="heading heading-5">
+                De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 -
+                Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno
+                a Ripoli (FI), Italy
+              </p>
             </div>
-        </section>
-
-        <section class="list-product">
-            <div class="container">
-                <div class="list-product__heading">
-                  <div class="row">
-                    <div class="col">
-                      <span class="heading heading-5">There are 30 products</span>
-                    </div>
-                    <div class="col">
-                      
-                    </div>
-                    <div class="col d-flex">
-                      <div class="list-product">
-                        <span>SORT BY : FROM A TO Z</span>
-                        <img src="./assets/images/icon/dropdown.svg" alt="">
-                      </div>
-
-                      <h3>FILTER</h3>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </section>
-
-        <!------------- start footer ------------->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="footer__logo">
-                            <img src="./assets/images/logo/logo.svg" alt="logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer__content">
-                    <div class="col col-lg-3 col-md-6 footer__care">
-                        <h2 class="footer__heading heading heading-5">
-                            CUSTOMER CARE
-                        </h2>
-                        <p><a href="#" class="heading heading-5">Track your order</a></p>
-                        <p><a href="faq.html" class="heading heading-5">Frequent Question</a></p>
-                    </div>
-                    <div class="col col-lg-3 col-md-6 footer__information">
-                        <h2 class="footer__heading heading heading-5">
-                            LEGAL INFORMATION:
-                        </h2>
-                        <p><a href="#" class="heading heading-5">Company name: De Carlo Nicholas</a></p>
-                        <p><a href="#" class="heading heading-5">VAT number: 07020260480</a></p>
-                        <p><a href="#" class="heading heading-5">REA: FI-674952</a></p>
-                        <p><a href="#" class="heading heading-5">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</a></p>
-                    </div>
-                    <div class="col col-lg-3 col-md-6 footer__terms">
-                        <h2 class="footer__heading heading heading-5">
-                            LEGAL TERMS:
-                        </h2>
-                        <p><a href="#" class="heading heading-5">Informazioni legali</a></p>
-                        <p><a href="#" class="heading heading-5">Condizioni generali di vendita</a></p>
-                        <p><a href="#" class="heading heading-5">Informativa sulla privacy</a></p>
-                        <p><a href="#" class="heading heading-5">Cookie policy</a></p>
-                    </div>
-                    <div class="col col-lg-3 col-md-6 footer__social">
-                        <h2 class="footer__heading heading heading-5">
-                            SUBSCRIBE FOR NEWSLETTER
-                        </h2>
-                        <div class="footer__input">
-                            <form action="">
-                                <input type="text" placeholder="Your Email">
-                                <button type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                        <h2 class="footer__heading heading heading-5">
-                            SOCIAL
-                        </h2>
-                        <div class="social__items">
-                            <a href="#" ><img src="./assets/images/icon/facebook.svg" class="social__item" alt="facebook"></a>
-                            <a href="#" ><img src="./assets/images/icon/instagram.svg" class="social__item" alt="instagram"></a>
-                            <a href="#" ><img src="./assets/images/icon/linkedin.svg" class="social__item" alt="linkedin"></a>
-                            <a href="#" ><img src="./assets/images/icon/youtube.svg" class="social__item" alt="youtube"></a>
-                        </div>    
-                    </div>
-                </div>
-                <div class="row footer__bottom">
-                    <div class="col">
-                        <p class="heading heading-5">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!------------- end footer ------------->
+          </div>
+        </div>
+      </footer>
+      <!------------- end footer ------------->
     </div>
     <!------------- Javascript ------------->
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
