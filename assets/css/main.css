@@ -1054,7 +1054,7 @@ body {
     }
 
     .product__content {
-        width: 280px;
+        width: 100%;
     }
 
     .product__btn {
@@ -1084,7 +1084,7 @@ body {
     .menu__button {
         display: none;
     }
-    
+
     .nav__items > li {
         line-height: 110px;
         padding: 0 10px;
