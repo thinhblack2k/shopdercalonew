@@ -1,430 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Detail</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
     <!------------- google font ------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <!--------------------------------------->
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-        <!-- overlay -->
-        <section id="overlay"></section>
-        <!------------- start header ------------->
-        <header class="header">
-            <div class="header__topbar">
-              <div class="topbar__container">
-                <p class="topbar__heading heading heading-5">
-                  FREE SHIPPING IN ITALY
-                </p>
-                <div class="topbar-select d-flex align-center">
-                    <select class="heading heading-5" name="" id="">
-                        <option value="">Italian</option>
-                        <option value="">Japan</option>
-                        <option value="">Korea</option>
-                    </select>
-                </div>
-              </div>
+      <!-- overlay -->
+      <section id="overlay"></section>
+      <!------------- start header ------------->
+      <header class="header">
+        <div class="header__topbar">
+          <div class="topbar__container">
+            <p class="topbar__heading heading heading-5">
+              FREE SHIPPING IN ITALY
+            </p>
+            <div class="topbar-select d-flex align-center">
+              <select class="heading heading-5" name="" id="">
+                <option value="">Italian</option>
+                <option value="">Japan</option>
+                <option value="">Korea</option>
+              </select>
             </div>
-            <div class="header__main d-flex">
-              <a href="index.html" class="header__left">
-                <img src="./assets/images/logo/logo.png" alt="logo" />
-              </a>
-              <nav
-                class="header__nav d-flex flex-1 juistify-center align-center"
-              >
-                <ul class="nav__items align-center col-none col-xl">
-                  <li class="nav__item heading heading-5">
-                    <a href="collection.html">SHOP</a>
-                    <ul class="subnav">
-                      <li class="heading heading-5"><a href="#">RING</a></li>
-                      <li class="heading heading-5"><a href="#">BRACELETS</a></li>
-                      <li class="heading heading-5"><a href="#">EARINGS</a></li>
-                      <li class="heading heading-5"><a href="#">NECKLACE</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav__item heading heading-5">
-                    <a href="history.html">OUR HISTORY</a>
-                  </li>
-                  <li class="nav__item heading heading-5">
-                    <a href="care-of-product.html">JEWELERY PRODUCTION</a>
-                  </li>
-                  <li class="nav__item heading heading-5">
-                    <a href="about.html">BECOME A DEALER</a>
-                  </li>
-                  <li class="nav__item heading heading-5">
-                    <a href="contact.html">CONTACT</a>
-                  </li>
+          </div>
+        </div>
+        <div class="header__main d-flex">
+          <a href="index.html" class="header__left">
+            <img src="./assets/images/logo/logo.png" alt="logo" />
+          </a>
+          <nav class="header__nav d-flex flex-1 juistify-center align-center">
+            <ul class="nav__items align-center col-none col-xl">
+              <li class="nav__item heading heading-5">
+                <a href="collection.html">SHOP</a>
+                <ul class="subnav">
+                  <li class="heading heading-5"><a href="#">RING</a></li>
+                  <li class="heading heading-5"><a href="#">BRACELETS</a></li>
+                  <li class="heading heading-5"><a href="#">EARINGS</a></li>
+                  <li class="heading heading-5"><a href="#">NECKLACE</a></li>
                 </ul>
-              </nav>
-              <div class="header__right">
-                <div class="menu__items d-flex">
-                  <a href="#" class="menu__item">
-                    <img src="./assets/images/icon/search.svg" alt="icon" />
-                  </a>
-                  <a href="#" class="menu__item">
-                    <img src="./assets/images/icon/love.svg" alt="icon" />
-                  </a>
-                  <a href="#" class="menu__item">
-                    <img src="./assets/images/icon/user.svg" alt="icon" />
-                  </a>
-                  <a href="#" class="menu__item">
-                    <img src="./assets/images/icon/cart.svg" alt="icon" />
-                  </a>
-                  <button href="#" class="menu__item menu__button">
-                    <img
-                      class="icon__menu"
-                      src="./assets/images/icon/menu.svg"
-                      alt="icon"
-                    />
-                  </button>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="history.html">OUR HISTORY</a>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="care-of-product.html">JEWELERY PRODUCTION</a>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="about.html">BECOME A DEALER</a>
+              </li>
+              <li class="nav__item heading heading-5">
+                <a href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <div class="menu__items d-flex">
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/search.svg" alt="icon" />
+              </a>
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/love.svg" alt="icon" />
+              </a>
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/user.svg" alt="icon" />
+              </a>
+              <a href="#" class="menu__item">
+                <img src="./assets/images/icon/cart.svg" alt="icon" />
+              </a>
+              <button href="#" class="menu__item menu__button">
+                <img
+                  class="icon__menu"
+                  src="./assets/images/icon/menu.svg"
+                  alt="icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!------------- end header ------------->
+
+      <!-- breadcrumb -->
+      <section class="breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="breadcrumb__items d-flex">
+                <li class="breadcrumb__item"><a href="#">HOME</a></li>
+                <li class="breadcrumb__item"><a href="#">RING</a></li>
+                <li class="breadcrumb__item present">
+                  <a href="#">PRODUCT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- detail product -->
+      <section class="product-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-6">
+              <div class="product-detail__image">
+                <img src="./assets/images/products/product.png" alt="" />
+              </div>
+              <div class="product-detail__images d-flex">
+                <div class="product-detail__images--item">
+                  <img src="./assets/images/products/product2.png" alt="" />
+                </div>
+                <div class="product-detail__images--item">
+                  <img src="./assets/images/products/product5.png" alt="" />
+                </div>
+                <div class="product-detail__images--item">
+                  <img src="./assets/images/products/product3.png" alt="" />
+                </div>
+                <div class="product-detail__images--item">
+                  <img src="./assets/images/products/product4.png" alt="" />
                 </div>
               </div>
             </div>
-          </header>
-        <!------------- end header ------------->
+            <div class="col col-lg-6">
+              <div class="product-detail__content">
+                <form action="#">
+                  <h2 class="product-detail__name heading heading-1">
+                    PRODUCT NAME
+                  </h2>
+                  <h3 class="product-detail__price">$99.99</h3>
+                  <div class="product-detail__size d-flex f-space">
+                    <h3 class="heading heading-4">SIZE</h3>
+                    <p class="heading heading-5 d-flex text-center">
+                      <span
+                        ><img
+                          src="./assets/images/icon/icon-size.svg"
+                          alt="" /></span
+                      >Find your size
+                    </p>
+                  </div>
+                  <div id="select">
+                    <input
+                      class="select__input heading heading-5"
+                      type="text"
+                      value="50"
+                    />
+                    <img
+                      class="select__icon"
+                      src="./assets/images/icon/dropblack.svg"
+                      alt=""
+                    />
+                    <ul class="select__items">
+                      <li class="select__item heading heading-5">48</li>
+                      <li class="select__item heading heading-5">49</li>
+                      <li class="select__item heading heading-5">50</li>
+                      <li class="select__item heading heading-5">51</li>
+                      <li class="select__item heading heading-5">52</li>
+                    </ul>
+                  </div>
+                  <div class="select-number d-flex">
+                    <span
+                      class="select-number__sum d-flex juistify-center text-center"
+                      >-</span
+                    >
+                    <input
+                      class="select__input heading heading-5 text-center"
+                      type="text" value="1"
+                    />
+                    <span
+                      class="select-number__sub d-flex juistify-center text-center"
+                      >+</span
+                    >
+                  </div>
+                  <div class="btn-add d-flex">
+                    <button class="btn product-detail__btn">ADD TO CART</button>
+                    <button
+                      class="btn product-detail__btn btn__love d-flex juistify-center text-center"
+                    >
+                      <img src="./assets/images/icon/love.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="btn btn product-detail__btn--buy">
+                    BUY NOW
+                  </button>
+                </form>
+                <p class="heading heading-5 product-detail__content--context1">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudanm, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo
+                </p>
 
-        <!-- breadcrumb -->
-        <section class="breadcrumb">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <ul class="breadcrumb__items d-flex ">
-                            <li class="breadcrumb__item"><a href="#">HOME</a></li>
-                            <li class="breadcrumb__item"><a href="#">RING</a></li>
-                            <li class="breadcrumb__item present"><a href="#">PRODUCT</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <h3 class="heading heading-4 product-detail__content--heading">
+                  OUR GIFT BOX EXCLUSIVELY FOR YOU
+                </h3>
+
+                <img
+                  class="product-detail__content--img"
+                  src="./assets/images/products/product-detail.png"
+                  alt=""
+                />
+              </div>
             </div>
-        </section>
-
-
-        <!-- detail product -->
-        <section class="product-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-6">
-                        <div class="product-detail__image">
-                            <img src="./assets/images/products/product.png" alt="">
-                        </div>
-                        <div class="product-detail__images d-flex">
-                            <div class="product-detail__images--item">
-                                <img src="./assets/images/products/product2.png" alt="">
-                            </div>
-                            <div class="product-detail__images--item">
-                                <img src="./assets/images/products/product5.png" alt="">
-                            </div>
-                            <div class="product-detail__images--item">
-                                <img src="./assets/images/products/product3.png" alt="">
-                            </div>
-                            <div class="product-detail__images--item">
-                                <img src="./assets/images/products/product4.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-6">
-                        <div class="product-detail__content">
-                            <form action="#">
-                                <h2 class="product-detail__name heading heading-1">PRODUCT NAME</h2>
-                                <h3 class="product-detail__price">$99.99</h3>
-                                <div class="product-detail__size d-flex f-space">
-                                    <h3 class="heading heading-4">SIZE</h3>
-                                    <p class="heading heading-5 d-flex text-center"><span><img src="./assets/images/icon/icon-size.svg" alt=""></span>Find your size</p>
-                                </div>
-                                <div id="select">
-                                    <input class="select__input heading heading-5" type="text" value="50">
-                                    <img class="select__icon" src="./assets/images/icon/dropblack.svg" alt="">
-                                    <ul class="select__items">
-                                        <li class="select__item heading heading-5">48</li>
-                                        <li class="select__item heading heading-5">49</li>
-                                        <li class="select__item heading heading-5">50</li>
-                                        <li class="select__item heading heading-5">51</li>
-                                        <li class="select__item heading heading-5">52</li>
-                                    </ul>
-                                </div>
-                                <div class="btn-add d-flex">
-                                    <button class="btn product-detail__btn">ADD TO CART</button>
-                                    <button class="btn product-detail__btn btn__love"><img src="./assets/images/icon/love.svg" alt=""></button>
-                                </div>
-                                <button class="btn btn product-detail__btn--buy">BUY NOW</button>
-                            </form>
-                            <p class="heading heading-5 product-detail__content--context1">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanm, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                            </p>
-
-                            <h3 class="heading heading-4 product-detail__content--heading">OUR GIFT BOX EXCLUSIVELY FOR YOU</h3>
-
-                            <img class="product-detail__content--img" src="./assets/images/products/product-detail.png" alt="">
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-info pd-section">
+        <div class="container pd-section">
+          <!-- tab items -->
+          <div class="tab__items d-flex">
+            <div class="tabs d-flex p-relative">
+              <div class="pd-inline">
+                <div class="tab-item active">
+                  <h2 class="heading heading-4">PRODUCT INFORMATION</h2>
                 </div>
+              </div>
+              <div class="pd-inline">
+                <div class="tab-item">
+                  <h2 class="heading heading-4">OUR SERVICE</h2>
+                </div>
+              </div>
+              <div class="pd-inline">
+                <div class="tab-item">
+                  <h2 class="heading heading-4">PAYMENT METHOD</h2>
+                </div>
+              </div>
+              <div class="line"></div>
             </div>
-        </section>
-
-        
-
-        <!------------- start section product ------------->
-        <section class="product pd-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="heading heading-1 text-center">RELATED PRODUCT</h2>
-                    </div>
+          </div>
+          <!-- tab content -->
+          <div class="tab__content pd-section">
+            <div class="tab-pane active">
+              <div class="row">
+                <div class="col col-md-6">
+                    <h2 class="heading heading-2">
+                        PRODUCT INFO
+                    </h2>
+                    <ul>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                    </ul>
                 </div>
-                <div class="product__items mg-t-container">
-                    <form action="#">
-                        <div class="product__item">
-                            <div class="product__content">
-                                <form action="">
-                                    <button type="submit" class="product__wishlist">
-                                        <img src="./assets/images/icon/love.svg" alt="">
-                                    </button>
-                                </form>
-                                <img src="./assets/images/products/product1.png" alt="">
-                                <h3 class="product__name heading heading-4">
-                                    PRODUCT NAME
-                                </h3>
-                                <p class="product__rice heading heading-5">
-                                    $99.99
-                                </p>
-                                <button class="product__btn btn">ADD TO CART</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="#">
-                        <div class="product__item">
-                            <div class="product__content">
-                                <form action="">
-                                    <button type="submit" class="product__wishlist">
-                                        <img src="./assets/images/icon/love.svg" alt="">
-                                    </button>
-                                </form>
-                                <img src="./assets/images/products/product1.png" alt="">
-                                <h3 class="product__name heading heading-4">
-                                    PRODUCT NAME
-                                </h3>
-                                <p class="product__rice heading heading-5">
-                                    $99.99
-                                </p>
-                                <button class="product__btn btn">ADD TO CART</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="#">
-                        <div class="product__item">
-                            <div class="product__content">
-                                <form action="">
-                                    <button type="submit" class="product__wishlist">
-                                        <img src="./assets/images/icon/love.svg" alt="">
-                                    </button>
-                                </form>
-                                <img src="./assets/images/products/product1.png" alt="">
-                                <h3 class="product__name heading heading-4">
-                                    PRODUCT NAME
-                                </h3>
-                                <p class="product__rice heading heading-5">
-                                    $99.99
-                                </p>
-                                <button class="product__btn btn">ADD TO CART</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="#">
-                        <div class="product__item">
-                            <div class="product__content">
-                                <form action="">
-                                    <button type="submit" class="product__wishlist">
-                                        <img src="./assets/images/icon/love.svg" alt="">
-                                    </button>
-                                </form>
-                                <img src="./assets/images/products/product1.png" alt="">
-                                <h3 class="product__name heading heading-4">
-                                    PRODUCT NAME
-                                </h3>
-                                <p class="product__rice heading heading-5">
-                                    $99.99
-                                </p>
-                                <button class="product__btn btn">ADD TO CART</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col col-md-6">
+                    <img src="./assets/images/products/product-detail2.png" alt="">
                 </div>
+              </div>
             </div>
-        </section>
-        <!------------- end section product ------------->
-
-        <!------------- start section parner ------------->
-        <section class="partner pd-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="heading heading-1 text-center">OUR SERVICES</h2>
-                    </div>
-                </div>
-                <div class="row mg-t-container">
-                    <div class="col col-md-6 col-lg-3">
-                        <div class="card partner__item">
-                            <div class="partner__image">
-                                <img src="./assets/images/icon/box.svg" alt="logo-partner">
-                            </div>
-                            <h3 class="partner__heading heading heading-4">
-                                FREE SHIPPING IN ITALY
-                            </h3>
-                            <p class="partner__text heading heading-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <div class="partner__info">
-                                <a href="#" class="heading heading-5">
-                                    READ MORE
-                                </a>
-                                <img src="./assets/images/icon/next-black.svg" alt=">">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-6 col-lg-3">
-                        <div class="card partner__item">
-                            <div class="partner__image">
-                                <img src="./assets/images/icon/box.svg" alt="logo-partner">
-                            </div>
-                            <h3 class="partner__heading heading heading-4">
-                                FREE SHIPPING IN ITALY
-                            </h3>
-                            <p class="partner__text heading heading-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <div class="partner__info">
-                                <a href="#" class="heading heading-5">
-                                    READ MORE
-                                </a>
-                                <img src="./assets/images/icon/next-black.svg" alt=">">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-6 col-lg-3">
-                        <div class="card partner__item">
-                            <div class="partner__image">
-                                <img src="./assets/images/icon/box.svg" alt="logo-partner">
-                            </div>
-                            <h3 class="partner__heading heading heading-4">
-                                FREE SHIPPING IN ITALY
-                            </h3>
-                            <p class="partner__text heading heading-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <div class="partner__info">
-                                <a href="#" class="heading heading-5">
-                                    READ MORE
-                                </a>
-                                <img src="./assets/images/icon/next-black.svg" alt=">">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-6 col-lg-3">
-                        <div class="card partner__item">
-                            <div class="partner__image">
-                                <img src="./assets/images/icon/box.svg" alt="logo-partner">
-                            </div>
-                            <h3 class="partner__heading heading heading-4">
-                                FREE SHIPPING IN ITALY
-                            </h3>
-                            <p class="partner__text heading heading-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <div class="partner__info">
-                                <a href="#" class="heading heading-5">
-                                    READ MORE
-                                </a>
-                                <img src="./assets/images/icon/next-black.svg" alt=">">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-pane">
+              test
             </div>
-        </section>
-        <!------------- end section parner ------------->
-
-        <!------------- start footer ------------->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="footer__logo">
-                            <img src="./assets/images/logo/logo.svg" alt="logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer__content">
-                    <div class="col col-lg-3 col-md-6 footer__care">
-                        <h3 class="footer__heading heading heading-5">
-                            CUSTOMER CARE
-                        </h3>
-                        <ul class="footer__items">
-                            <li class="footer__item"><a href="#" class="heading heading-5">Track your order</a></li>
-                            <li class="footer__item"><a href="faq.html" class="heading heading-5">Frequent Question</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-3 col-md-6 footer__information">
-                        <h3 class="footer__heading heading heading-5">
-                            LEGAL INFORMATION:
-                        </h3>
-                        <ul class="footer__items">
-                            <li class="footer__item"><p class="heading heading-5">Company name: De Carlo Nicholas</p></li>
-                            <li class="footer__item"><p class="heading heading-5">VAT number: 07020260480</p></li>
-                            <li class="footer__item"><p class="heading heading-5">REA: FI-674952</p></li>
-                            <li class="footer__item"><p class="heading heading-5">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p></li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-3 col-md-6 footer__terms">
-                        <h3 class="footer__heading heading heading-5">
-                            LEGAL TERMS:
-                        </h3>
-                        <ul class="footer__items">
-                            <li class="footer__item"><p class="heading heading-5">Informazioni legali</p></li>
-                            <li class="footer__item"><p class="heading heading-5">Condizioni generali di vendita</p></li>
-                            <li class="footer__item"><p class="heading heading-5">Informativa sulla privacy</p></li>
-                            <li class="footer__item"><p class="heading heading-5">Cookie policy</p></li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-3 col-md-6 footer__social">
-                        <h3 class="footer__heading heading heading-5">
-                            SUBSCRIBE FOR NEWSLETTER
-                        </h3>
-                        <div class="footer__input">
-                            <form action="">
-                                <input type="text" placeholder="Your Email">
-                                <button type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                        <h3 class="footer__heading heading heading-5">
-                            SOCIAL
-                        </h3>
-                        <ul class="social__items d-flex">
-                            <li><a href="https://www.facebook.com/edricdang310" ><img src="./assets/images/icon/facebook.svg" class="social__item" alt="facebook"></a></li>
-                            <li><a href="https://www.instagram.com/deleteallstartagain.2k/" ><img src="./assets/images/icon/instagram.svg" class="social__item" alt="instagram"></a></li>
-                            <li><a href="https://www.linkedin.com/in/dhthinh/" ><img src="./assets/images/icon/linkedin.svg" class="social__item" alt="linkedin"></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCjzcCjVwHkngCWX-VlDtLtQ" ><img src="./assets/images/icon/youtube.svg" class="social__item" alt="youtube"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row footer__bottom">
-                    <div class="col">
-                        <p class="heading heading-5">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
-                    </div>
-                </div>
+            <div class="tab-pane">
+              test
             </div>
-        </footer>
-        <!------------- end footer ------------->
+          </div>
+        </div>
+      </section>
+
+      <!------------- start section product ------------->
+      <section class="product pd-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="heading heading-1 text-center">RELATED PRODUCT</h2>
+            </div>
+          </div>
+          <div class="product__items mg-t-container">
+            <form action="#">
+              <div class="product__item">
+                <div class="product__content">
+                  <form action="">
+                    <button type="submit" class="product__wishlist">
+                      <img src="./assets/images/icon/love.svg" alt="" />
+                    </button>
+                  </form>
+                  <img src="./assets/images/products/product1.png" alt="" />
+                  <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                  <p class="product__rice heading heading-5">$99.99</p>
+                  <button class="product__btn btn">ADD TO CART</button>
+                </div>
+              </div>
+            </form>
+            <form action="#">
+              <div class="product__item">
+                <div class="product__content">
+                  <form action="">
+                    <button type="submit" class="product__wishlist">
+                      <img src="./assets/images/icon/love.svg" alt="" />
+                    </button>
+                  </form>
+                  <img src="./assets/images/products/product1.png" alt="" />
+                  <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                  <p class="product__rice heading heading-5">$99.99</p>
+                  <button class="product__btn btn">ADD TO CART</button>
+                </div>
+              </div>
+            </form>
+            <form action="#">
+              <div class="product__item">
+                <div class="product__content">
+                  <form action="">
+                    <button type="submit" class="product__wishlist">
+                      <img src="./assets/images/icon/love.svg" alt="" />
+                    </button>
+                  </form>
+                  <img src="./assets/images/products/product1.png" alt="" />
+                  <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                  <p class="product__rice heading heading-5">$99.99</p>
+                  <button class="product__btn btn">ADD TO CART</button>
+                </div>
+              </div>
+            </form>
+            <form action="#">
+              <div class="product__item">
+                <div class="product__content">
+                  <form action="">
+                    <button type="submit" class="product__wishlist">
+                      <img src="./assets/images/icon/love.svg" alt="" />
+                    </button>
+                  </form>
+                  <img src="./assets/images/products/product1.png" alt="" />
+                  <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
+                  <p class="product__rice heading heading-5">$99.99</p>
+                  <button class="product__btn btn">ADD TO CART</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!------------- end section product ------------->
+
+      <!------------- start section parner ------------->
+      <section class="partner pd-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="heading heading-1 text-center">OUR SERVICES</h2>
+            </div>
+          </div>
+          <div class="row mg-t-container">
+            <div class="col col-md-6 col-lg-3">
+              <div class="card partner__item">
+                <div class="partner__image">
+                  <img src="./assets/images/icon/box.svg" alt="logo-partner" />
+                </div>
+                <h3 class="partner__heading heading heading-4">
+                  FREE SHIPPING IN ITALY
+                </h3>
+                <p class="partner__text heading heading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <div class="partner__info">
+                  <a href="#" class="heading heading-5"> READ MORE </a>
+                  <img src="./assets/images/icon/next-black.svg" alt=">" />
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3">
+              <div class="card partner__item">
+                <div class="partner__image">
+                  <img src="./assets/images/icon/box.svg" alt="logo-partner" />
+                </div>
+                <h3 class="partner__heading heading heading-4">
+                  FREE SHIPPING IN ITALY
+                </h3>
+                <p class="partner__text heading heading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <div class="partner__info">
+                  <a href="#" class="heading heading-5"> READ MORE </a>
+                  <img src="./assets/images/icon/next-black.svg" alt=">" />
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3">
+              <div class="card partner__item">
+                <div class="partner__image">
+                  <img src="./assets/images/icon/box.svg" alt="logo-partner" />
+                </div>
+                <h3 class="partner__heading heading heading-4">
+                  FREE SHIPPING IN ITALY
+                </h3>
+                <p class="partner__text heading heading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <div class="partner__info">
+                  <a href="#" class="heading heading-5"> READ MORE </a>
+                  <img src="./assets/images/icon/next-black.svg" alt=">" />
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3">
+              <div class="card partner__item">
+                <div class="partner__image">
+                  <img src="./assets/images/icon/box.svg" alt="logo-partner" />
+                </div>
+                <h3 class="partner__heading heading heading-4">
+                  FREE SHIPPING IN ITALY
+                </h3>
+                <p class="partner__text heading heading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <div class="partner__info">
+                  <a href="#" class="heading heading-5"> READ MORE </a>
+                  <img src="./assets/images/icon/next-black.svg" alt=">" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------- end section parner ------------->
+
+      <!------------- start footer ------------->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer__logo">
+                <img src="./assets/images/logo/logo.svg" alt="logo" />
+              </div>
+            </div>
+          </div>
+          <div class="row footer__content">
+            <div class="col col-lg-3 col-md-6 footer__care">
+              <h3 class="footer__heading heading heading-5">CUSTOMER CARE</h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a href="#" class="heading heading-5">Track your order</a>
+                </li>
+                <li class="footer__item">
+                  <a href="faq.html" class="heading heading-5"
+                    >Frequent Question</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col col-lg-3 col-md-6 footer__information">
+              <h3 class="footer__heading heading heading-5">
+                LEGAL INFORMATION:
+              </h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <p class="heading heading-5">
+                    Company name: De Carlo Nicholas
+                  </p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">VAT number: 07020260480</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">REA: FI-674952</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">
+                    Registered office: Via di San Quirico a Ruballa 15, 50012,
+                    Bagno a Ripoli (FI), Italy
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-lg-3 col-md-6 footer__terms">
+              <h3 class="footer__heading heading heading-5">LEGAL TERMS:</h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <p class="heading heading-5">Informazioni legali</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">
+                    Condizioni generali di vendita
+                  </p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">Informativa sulla privacy</p>
+                </li>
+                <li class="footer__item">
+                  <p class="heading heading-5">Cookie policy</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-lg-3 col-md-6 footer__social">
+              <h3 class="footer__heading heading heading-5">
+                SUBSCRIBE FOR NEWSLETTER
+              </h3>
+              <div class="footer__input">
+                <form action="">
+                  <input type="text" placeholder="Your Email" />
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+              <h3 class="footer__heading heading heading-5">SOCIAL</h3>
+              <ul class="social__items d-flex">
+                <li>
+                  <a href="https://www.facebook.com/edricdang310"
+                    ><img
+                      src="./assets/images/icon/facebook.svg"
+                      class="social__item"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/deleteallstartagain.2k/"
+                    ><img
+                      src="./assets/images/icon/instagram.svg"
+                      class="social__item"
+                      alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/dhthinh/"
+                    ><img
+                      src="./assets/images/icon/linkedin.svg"
+                      class="social__item"
+                      alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCjzcCjVwHkngCWX-VlDtLtQ"
+                    ><img
+                      src="./assets/images/icon/youtube.svg"
+                      class="social__item"
+                      alt="youtube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row footer__bottom">
+            <div class="col">
+              <p class="heading heading-5">
+                De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 -
+                Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno
+                a Ripoli (FI), Italy
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!------------- end footer ------------->
     </div>
     <!------------- Javascript ------------->
     <script src="./assets/js/main.js"></script>
-    
-</body>
+    <script src="./assets/js/tab.js"></script>
+  </body>
 </html>
