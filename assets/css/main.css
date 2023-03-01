@@ -1163,6 +1163,51 @@ body {
     margin-top: 40px;
 }
 
+/* === breadcrumbs === */
+.breadcrumb {
+    margin-top: 100px;
+}
+.breadcrumb__items {
+    padding-left: 0px;
+}
+
+.breadcrumb__item {
+    list-style: none;
+}
+
+.breadcrumb__item a {
+    text-decoration: none;
+    color: #BABCC3;
+}
+
+.breadcrumb__item.present a {
+    color: #46484F;
+}
+
+.breadcrumb__items li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* product details */
+.product-detail__images {
+    margin-inline: calc(-1 * var(--getter));
+}
+
+.product-detail__image img {
+    width: 100%;
+}
+
+.product-detail__images--item {
+    width: 25%;
+    padding: var(--getter);
+}
+.product-detail__images--item img {
+    width: 100%;
+}
+
+
 
 /* === responsive === */
 @media (min-width: 576px) {
