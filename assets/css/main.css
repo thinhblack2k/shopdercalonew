@@ -1026,6 +1026,16 @@ body {
 }
 
 /* === FAQ Tab === */
+.tabs {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-inline: -10px;
+}
+
+.tabs::-webkit-scrollbar {
+    height: 1;
+}
+
 .tabs h2 {
     margin: 0;
     padding: 10px;
@@ -1044,8 +1054,11 @@ body {
     transition: all 0.2s ease;
 }
 
-.tabs .tab-item{
+.pd-inline {
     padding: 0 20px;
+}
+
+.tabs .tab-item{
     text-align: center;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -1069,6 +1082,78 @@ body {
 .tab-pane.active {
     display: block;
 }
+
+.accordion {
+    padding-left: 0px;
+}
+
+.accordion li {
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gray-t);
+}
+
+.accordion li h3 {
+    margin: 0px;
+    padding: 20px 0;
+}
+
+.accordion .content p{
+    margin: 0;
+}
+
+.accordion li label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-accordion {
+    width: 21px;
+    height: 2px;
+    margin-left: 36px;
+    background-color: var(--black);
+}
+
+.icon-accordion::after{
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    background-color: var(--black);
+    transform: rotate(90deg);
+}
+
+.accordion label + input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.accordion label + input[type="radio"]:checked + .content {
+    max-height: 500px;
+}
+
+.accordion label + input[type="radio"]:checked + .icon-accordion::after {
+    transform: rotate(-90deg);
+}
+
+.accordion .accordion-content__context {
+    color: var(--gray-t);
+    padding: 10px 0;
+}
+
+.accordion .accordion-content__heading {
+    color: var(--black);
+    margin-top: 40px;
+}
+
 
 /* === responsive === */
 @media (min-width: 576px) {
