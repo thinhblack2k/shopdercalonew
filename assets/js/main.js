@@ -18,32 +18,10 @@ overlay.addEventListener("click", ()=>{
     menu.classList.toggle("nav__items--open");
 });
 
-/**
- * Xử lý slider show
- * Author: THINHDH (27/02/2013)
- */
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
 
 /**
  * Xử lý popule video
- * AuthorL THINHDH (28/02/2023)
+ * Author: THINHDH (28/02/2023)
  */
 
 window.document.onkeydown = function(e) {
@@ -70,3 +48,19 @@ function lightbox_close() {
   lightBoxVideo.pause();
 }
 
+
+
+/**
+ *  Xử lý select option
+ * AUTHOR: THINHDH (01/03/2023)
+ */
+
+const selectBtn = document.querySelector('#select .select__input');
+const selectBox = document.querySelector('#select .select__items');
+const selectItems = document.querySelectorAll('#select .select__item');
+
+selectBtn.addEventListener("click", () => {
+  selectBox.classList.toggle('select__items--open');
+});
+
+console.log(selectItems[0].innerHTML);
