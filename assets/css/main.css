@@ -487,10 +487,6 @@ body {
     height: 100%;
 }
 
-.product__content img {
-    width: 100%;
-}
-
 .product__wishlist {
     border: none;
     position: absolute;
@@ -784,6 +780,7 @@ body {
 .banner-history p {
     margin-top: 15px;
     margin-bottom: 41px;
+    color: var(--white);
 }
 
 /* === list text image === */
@@ -1390,6 +1387,11 @@ body {
     .mg-t-container {
         margin-top: calc(45px - var(--gutter) * 2);
     }
+
+    .pd-row {
+        padding: 100px 0;
+    }
+
     .header__main {
         height: 110px;
         padding: 0 50px;
