@@ -36,7 +36,7 @@
 }
 
 .mg-t-container {
-    margin-top: calc(45px - var(--gutter) * 2);
+    margin-top: calc(45px - var(--gutter));
 }
 
 .pd-section {
