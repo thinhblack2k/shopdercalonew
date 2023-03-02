@@ -823,8 +823,13 @@ body {
     width: 100%;
 }
 
+.dealer form {
+    padding-top: calc(50px - 20px - var(--gutter));
+}
+
 .dealer__lable {
     margin-bottom: 11px;
+    margin-top: calc(40px - var(--gutter) * 2);
 }
 
 .dealer__input {
