@@ -19,6 +19,10 @@
     position: relative;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
 .juistify-center {
     justify-content: center;
 }
@@ -32,7 +36,7 @@
 }
 
 .mg-t-container {
-    margin-top: calc(25px - var(--gutter) * 2);
+    margin-top: calc(45px - var(--gutter) * 2);
 }
 
 .pd-section {
@@ -43,4 +47,7 @@
     padding: calc(40px - var(--gutter)) 0px;
 }
 
+.w-100 {
+    width: 100%;
+}
 
