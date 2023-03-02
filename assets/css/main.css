@@ -319,10 +319,6 @@ body {
 
 }
 
-.category img {
-    width: 100%;
-}
-
 .category__container .col{
     width: 50%;
 }
@@ -1384,7 +1380,7 @@ body {
     }
 
     .pd-section {
-        padding: 100px;
+        padding: 100px 0;
     }
 
     .pd-section-2 {
