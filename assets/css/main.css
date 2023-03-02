@@ -391,6 +391,10 @@ body {
     color: var(--black);
 }
 
+.text-image__btn a {
+    display: inline-block;
+}
+
 /* === video === */
 #fade {
     display: none;
@@ -748,8 +752,8 @@ body {
 
 
 /* === video text === */
-.video-text__img img {
-    width: 100%;
+.video-text__img {
+    max-width: 980px;
 }
 
 .video-text__heading {
@@ -758,6 +762,7 @@ body {
 
 .video-text__text {
     max-width: 980px;
+    padding: 0 var(--gutter);
     text-align: center;
     color: var(--gray-t);
     margin: 0;
@@ -788,14 +793,6 @@ body {
     background-color: var(--gray-bg);
 }
 
-.list-text-image .col {
-   
-}
-
-.list-text-image__img img {
-    width: 100%;
-}
-
 .content__container h3 {
     margin-top: 30px;
 }
@@ -811,9 +808,6 @@ body {
 /* ====================================== */
 
 /* === About Us === */
-.dealer {
-}
-
 .section__title h2 {
     margin-bottom: 20px;
 }
@@ -880,6 +874,10 @@ body {
     margin-bottom: 5px;
 }
 
+.contact__time {
+    margin-top: calc(40px - var(--gutter));
+}
+
 
 /* === care product === */
 .care-product {
@@ -887,6 +885,7 @@ body {
 }
 
 .care-product__items {
+    padding-top: calc(30px - var(--gutter));
 }
 
 .care-product__content {
@@ -919,6 +918,10 @@ body {
 .banner-care-product h2 {
     color: var(--white);
     margin-bottom: 27px;
+}
+
+.banner-care-product h3 {
+    color: var(--white);
 }
 
 .banner-care-product .banner__content {
@@ -1533,11 +1536,11 @@ body {
     }
 
     .list-text-image .row {
-        margin-inline: -50px;
+        margin: 0 -90px;
     }
     
-    .list-text-image .row .col{
-        padding: 0 50px;
+    .list-text-image .col{
+        padding: 0 90px;
     }
 
     .collection__content h3{
@@ -1545,6 +1548,13 @@ body {
         height: 48px;
     }
 
+    .pd-t-30 {
+        padding-top: calc(50px - var(--gutter));
+    }
+
+    .contact__time {
+        margin-top: calc(80px - var(--gutter));
+    }
     
 }
 

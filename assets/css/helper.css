@@ -47,6 +47,10 @@
     padding: 40px 0px;
 }
 
+.pd-t-30 {
+    padding-top: 30px;
+}
+
 .pd-section-2 {
     padding: calc(40px - var(--gutter)) 0px;
 }
@@ -54,4 +58,10 @@
 .w-100 {
     width: 100%;
 }
+
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+
+
 
