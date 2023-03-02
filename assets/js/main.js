@@ -64,3 +64,15 @@ selectBtn.addEventListener("click", () => {
 });
 
 console.log(selectItems[0].innerHTML);
+
+
+/**
+ * Xử lý slider hình ảnh
+ * AUTHOR: THINHDH (02/03/2023)
+ */
+function selectImg(imgs) {
+  var expandImg = document.querySelector(".product-detail__images--item img");
+  var imgText = document.querySelector(".product-detail__image img");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+}
