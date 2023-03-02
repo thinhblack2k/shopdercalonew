@@ -461,6 +461,7 @@ body {
 
 /* === product === */
 .product__items {
+    padding-top: var(--gutter);
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
