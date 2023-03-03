@@ -48,7 +48,6 @@ body {
 .heading {
     font-weight: 600;
     line-height: 1.5;
-    color: var(--black);
     letter-spacing: 2px;
     color: var(--black);
     margin: 0;
@@ -815,15 +814,15 @@ body {
 }
 
 .dealer form {
-    padding-top: calc(50px - 20px - var(--gutter));
+    margin-top: calc(50px - 20px - var(--gutter));
 }
 
 .dealer__lable {
     margin-bottom: 11px;
-    margin-top: calc(40px - var(--gutter) * 2);
 }
 
 .dealer__input {
+    margin-bottom: calc(40px - var(--gutter) * 2);
     border: solid 1px #ECECEC;
     background-color: var(--white);
     height: 60px;
@@ -833,8 +832,12 @@ body {
 .dearler__textarea {
     border: solid 1px #ECECEC;
     background-color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: calc(40px - var(--gutter) * 2);
     padding: 18px 20px;
+}
+
+.dealer__checkbox {
+    margin-bottom: calc(20px - var(--gutter) * 2);
 }
 
 .dealer__checkbox input {
@@ -851,7 +854,7 @@ body {
 }
 
 .dealer__btn {
-    margin-top: 40px;
+    margin-top: calc(40px - (20px - var(--gutter) * 2) - var(--gutter));
     background-color: var(--black);
     color: var(--white);
 }
@@ -1479,6 +1482,10 @@ body {
     
     .footer__social {
         order: 4;
+    }
+
+    .dealer form {
+        margin-top: calc(100px - 20px - var(--gutter));
     }
 
     .collection-product__items {
