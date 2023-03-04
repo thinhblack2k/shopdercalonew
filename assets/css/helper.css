@@ -48,7 +48,7 @@
 }
 
 .pd-t-30 {
-    padding-top: 30px;
+    padding-top: calc(30px - var(--gutter) * 2);
 }
 
 .pd-section-2 {
