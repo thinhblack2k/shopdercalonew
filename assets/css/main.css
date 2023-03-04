@@ -1161,6 +1161,10 @@ body {
 }
 
 /* === breadcrumbs === */
+.breadcrumb {
+    padding-top: calc(40px - var(--gutter));
+    padding-bottom: calc(40px - var(--gutter) * 2);
+}
 .breadcrumb ul{
     margin: 0;
 }
@@ -1503,6 +1507,7 @@ body {
     }
 
     .breadcrumb {
+        padding-top: calc(100px - var(--gutter));
         padding-bottom: calc(60px - var(--gutter));
     }
     
