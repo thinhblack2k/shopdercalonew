@@ -68,6 +68,3 @@ selectBtn.addEventListener("click", () => {
  * Xử lý slider hình ảnh
  * AUTHOR: THINHDH (02/03/2023)
  */
-function selectImg() {
-
-}
