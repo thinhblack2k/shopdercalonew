@@ -101,6 +101,7 @@ body {
     color: var(--white);
     position: relative;
     z-index: 4;
+    box-shadow: 0px 1px 0px 0px #ECECEC;
 }
 
 .header__topbar {
@@ -986,6 +987,7 @@ body {
 
 .collection__total {
     color: var(--gray-t);
+    margin: 0px;
 }
 
 .collection__sort img{
