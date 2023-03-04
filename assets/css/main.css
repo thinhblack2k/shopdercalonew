@@ -1212,7 +1212,6 @@ body {
 }
 
 .product-detail__price {
-    font-size: 30px;
     color: #555562;
 }
 
@@ -1633,6 +1632,11 @@ body {
 
     .btn-addtocart {
         margin-top: 0px;
+    }
+
+    .product-detail__name,
+    .product-detail__price {
+        font-size: 30px;
     }
 }
 
