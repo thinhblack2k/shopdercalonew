@@ -1069,6 +1069,7 @@ body {
     color: #333;
     display: none;
 }
+
 .tab-pane.active {
     display: block;
 }
@@ -1475,6 +1476,14 @@ body {
     .product__content {
         width: 100%;
     }
+
+    .tab-pane .col img {
+        padding-left: 100px;
+    }
+
+    .breadcrumb {
+        padding-bottom: calc(60px - var(--gutter));
+    }
     
 }
 
@@ -1589,10 +1598,6 @@ body {
 
     .collection-product__item {
         padding-bottom: 60px;
-    }
-
-    .breadcrumb {
-        padding-bottom: calc(60px - var(--gutter));
     }
 }
 
