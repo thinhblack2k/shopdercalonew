@@ -119,7 +119,7 @@
               <div class="product-detail__image">
                 <img class="w-100" src="./assets/images/products/product.png" alt="" />
               </div>
-              <div class="product-detail__images d-flex">
+              <div class="product-detail__images d-flex p-relative">
                 <div class="product-detail__images--item">
                   <img class="w-100" src="./assets/images/products/product2.png" alt="" />
                 </div>
@@ -129,8 +129,15 @@
                 <div class="product-detail__images--item">
                   <img class="w-100" src="./assets/images/products/product3.png" alt="" />
                 </div>
-                <div class="product-detail__images--item">
+                <div class="product-detail__images--item p-relative">
                   <img class="w-100" src="./assets/images/products/product4.png" alt="" />
+                  <button class="text-image__player"0>
+                    <img style="width: 61.5%;" src="./assets/images/icon/player.svg" alt="" />
+                  </button>
+                </div>
+                <div class="image__arrow d-flex f-space p-absolute w-100">
+                  <button><img src="./assets/images/icon/prev-black.svg" alt="prev"></button>
+                  <button><img src="./assets/images/icon/next-black.svg" alt="next"></button>
                 </div>
               </div>
             </div>
@@ -144,11 +151,7 @@
                   <div class="product-detail__size d-flex f-space align-center">
                     <h3 class="heading heading-4">SIZE</h3>
                     <div class="d-flex text-center">
-                      <span
-                        ><img
-                          src="./assets/images/icon/icon-size.svg"
-                          alt="" /></span
-                      >Find your size
+                      <span><img src="./assets/images/icon/icon-size.svg" alt="size" style="margin-right: 10px;"/></span>Find your size
                     </div>
                   </div>
                   <div id="select">

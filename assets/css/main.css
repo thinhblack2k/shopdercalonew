@@ -459,7 +459,7 @@ body {
 }
 
 .product__items::-webkit-scrollbar {
-    height: 1;
+    height: 0px !important;
 }
 
 .product__item {
@@ -1019,11 +1019,11 @@ body {
 .tabs {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    margin-inline: -10px;
+    margin-inline: -20px;
 }
 
 .tabs::-webkit-scrollbar {
-    height: 1;
+    height: 0px !important;
 }
 
 .tabs h2 {
@@ -1208,6 +1208,21 @@ body {
 /* product details */
 .product-detail__images {
     margin-inline: calc(-1 * var(--gutter));
+}
+
+.product-detail__images .image__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    padding-inline: calc(8px + var(--gutter));
+}
+
+.image__arrow button {
+    border: none;
+    background-color: transparent;
+}
+
+.image__arrow button:hover {
+    cursor: pointer;
 }
 
 .product-detail__images--item {
