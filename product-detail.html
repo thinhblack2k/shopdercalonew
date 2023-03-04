@@ -141,15 +141,15 @@
                     PRODUCT NAME
                   </h2>
                   <span class="product-detail__price">$99.99</span>
-                  <div class="product-detail__size d-flex f-space">
+                  <div class="product-detail__size d-flex f-space align-center">
                     <h3 class="heading heading-4">SIZE</h3>
-                    <p class="d-flex text-center">
+                    <div class="d-flex text-center">
                       <span
                         ><img
                           src="./assets/images/icon/icon-size.svg"
                           alt="" /></span
                       >Find your size
-                    </p>
+                    </div>
                   </div>
                   <div id="select">
                     <input
@@ -170,32 +170,23 @@
                       <li class="select__item">52</li>
                     </ul>
                   </div>
-                  <div class="select-number d-flex">
-                    <span
-                      class="select-number__sum d-flex juistify-center text-center"
-                      >-</span
-                    >
-                    <input
-                      class="select__input text-center"
-                      type="text"
-                      value="1"
-                    />
-                    <span
-                      class="select-number__sub d-flex juistify-center text-center"
-                      >+</span
-                    >
+                  <div class="btn-add">
+                    <div class="select-number d-flex">
+                      <span class="select-number__sum d-flex juistify-center text-center">-</span>
+                        <input class="select__input text-center" type="text" value="1"/>
+                      <span class="select-number__sub d-flex juistify-center text-center" >+</span>
+                    </div>
+                    <div class="btn-addtocart flex-1 d-flex">
+                      <button class="btn product-detail__btn">ADD TO CART</button>
+                      <button class="btn btn__love d-flex juistify-center align-center">
+                        <img src="./assets/images/icon/love.svg" alt="" />
+                      </button>
+                    </div>
                   </div>
-                  <div class="btn-add d-flex">
-                    <button class="btn product-detail__btn">ADD TO CART</button>
-                    <button
-                      class="btn product-detail__btn btn__love d-flex juistify-center text-center"
-                    >
-                      <img src="./assets/images/icon/love.svg" alt="" />
-                    </button>
-                  </div>
-                  <button class="btn btn product-detail__btn--buy">
+                  <button class="btn product-detail__btn--buy">
                     BUY NOW
                   </button>
+                  <button class="btn d-none product-detail__btn--register">GET THIS PRODUCT BY 1ST APR !</button>
                 </form>
                 <p class="product-detail__content--context1">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
