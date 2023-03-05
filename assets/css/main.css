@@ -1231,6 +1231,10 @@ body {
     padding: var(--gutter);
 }
 
+.product-detail__images--item:hover {
+    cursor: pointer;
+}
+
 .product-detail__content p{
     color: var(--gray-t)
 }

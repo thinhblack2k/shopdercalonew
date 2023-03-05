@@ -68,3 +68,10 @@ selectBtn.addEventListener("click", () => {
  * Xử lý slider hình ảnh
  * AUTHOR: THINHDH (02/03/2023)
  */
+function selectImages(imgs) {
+  var expandImg = document.querySelector(".product-detail__image img");
+  expandImg.src = imgs.src;
+}
+
+const listImages = document.querySelectorAll("product-detail__images--item img");
+console.log(listImages);
