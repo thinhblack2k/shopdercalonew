@@ -1028,7 +1028,7 @@ body {
 /* === FAQ Tab === */
 .tabs {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-inline: -20px;
 }
@@ -1081,78 +1081,79 @@ body {
     display: none;
 }
 
+.tab-pane ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.tab-pane li {
+    border-bottom: solid 1px var(--gray-bg);
+}
+
 .tab-pane.active {
     display: block;
 }
 
+/* accordion */
 .accordion {
-    padding-left: 0px;
-    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 105px;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
-.accordion li {
-    list-style: none;
-    border-bottom: 1px solid var(--gray-t);
-}
+.panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
 
-.accordion li h3 {
-    margin: 0px;
-    padding: 20px 0;
-}
 
-.accordion .content {
-    margin-top: 5px;
-}
-
-.accordion .content p{
-    margin: 0;
-    padding: 0px 0px 20px 0px !important;
-}
-
-.accordion .accordion-content__context {
-    color: var(--gray-t);
-    padding-bottom: 20px;
-}
-
-.accordion .accordion-content__heading {
-    color: var(--black);
-    padding: 20px 0px;
-}
-
-.accordion li label {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
+/* icon-accordion */
 .icon-accordion {
-    padding-right: calc(var(--gutter) * 2);
+    position: relative;
     width: 21px;
-    height: 2px;
-    margin-left: 36px;
-    background-color: var(--black);
+    height: 22px;
 }
 
-.icon-accordion::after{
-    content: "";
+.icon-accordion .icon-doc {
     position: absolute;
-    width: 21px;
-    height: 2px;
-    background-color: var(--black);
-    transform: rotate(90deg);
+    top: 0px;
+    left: 9px;
 }
 
-.accordion label + input[type="radio"] {
+.icon-doc.open-accordion {
     display: none;
 }
 
-.accordion .content {
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
+.icon-accordion .icon-ngang {
+    position: absolute;
+    top: 10px;
+    left: 0px;
 }
+
+.accordion.active .icon-accordion .icon-doc{
+    display: none;
+}
+
+
+.tab-pane .panel {
+    margin-top: 5px;
+    padding-bottom: 20px ;
+}
+
+.panel .content p {
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.accordion-content__heading {
+    padding: 20px 0;
+}
+
 
 .tab__footer {
     font-size: 20px;
@@ -1174,6 +1175,7 @@ body {
 }
 
 .accordion label + input[type="radio"]:checked + .icon-accordion::after {
+    position: absolute;
     transform: rotate(-90deg);
 }
 
