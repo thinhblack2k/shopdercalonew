@@ -16,7 +16,7 @@
 }
 
 [style*="--w"] {
-    width: calc((100% / 12) * var(--w));
+    /* width: calc((100% / 12) * var(--w)); */
     max-width: calc((100% / 12) * var(--w));
 }
 

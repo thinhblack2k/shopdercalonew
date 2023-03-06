@@ -7,6 +7,7 @@
     <title>Decarlo By Thịnh</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,9 +26,7 @@
       <header class="header">
         <div class="header__topbar">
           <div class="topbar__container">
-            <p class="topbar__heading">
-              FREE SHIPPING IN ITALY
-            </p>
+            <p class="topbar__heading">FREE SHIPPING IN ITALY</p>
             <div class="topbar-select d-flex align-center">
               <select class="" name="select-qg" id="selectqg">
                 <option value="">Italian</option>
@@ -44,7 +43,14 @@
           <nav class="header__nav d-flex flex-1 juistify-center align-center">
             <ul class="nav__items align-center d-none col-xl">
               <li class="nav__item">
-                <a href="collection.html">SHOP <span><img style="margin: 0 0 2px 5px;" src="./assets/images/icon/dropblack.svg" alt=""></span></a>
+                <a href="collection.html"
+                  >SHOP
+                  <span
+                    ><img
+                      style="margin: 0 0 2px 5px"
+                      src="./assets/images/icon/dropblack.svg"
+                      alt="" /></span
+                ></a>
                 <ul class="subnav">
                   <li class=""><a href="#">RING</a></li>
                   <li class=""><a href="#">BRACELETS</a></li>
@@ -145,9 +151,16 @@
             </div>
           </div>
           <div class="row category__container mg-t-container">
-            <div class="col col-sm-6 col-md-3" style="--w:6; --w-sm:6; --w-md:3;">
+            <div
+              class="col col-sm-6 col-md-3"
+              style="--w: 6; --w-sm: 6; --w-md: 3"
+            >
               <div class="card">
-                <img class="w-100" src="./assets/images/products/category1.png" alt="image-category" />
+                <img
+                  class="w-100"
+                  src="./assets/images/products/category1.png"
+                  alt="image-category"
+                />
                 <a
                   href="collection.html"
                   class="btn category__btn d-flex juistify-center align-center"
@@ -155,9 +168,16 @@
                 >
               </div>
             </div>
-            <div class="col col-sm-6 col-md-3" style="--w:6; --w-sm:6; --w-md:3;">
+            <div
+              class="col col-sm-6 col-md-3"
+              style="--w: 6; --w-sm: 6; --w-md: 3"
+            >
               <div class="card">
-                <img class="w-100" src="./assets/images/products/category2.png" alt="image-category" />
+                <img
+                  class="w-100"
+                  src="./assets/images/products/category2.png"
+                  alt="image-category"
+                />
                 <a
                   href="collection.html"
                   class="btn category__btn d-flex juistify-center align-center"
@@ -165,9 +185,16 @@
                 >
               </div>
             </div>
-            <div class="col col-sm-6 col-md-3" style="--w:6; --w-sm:6; --w-md:3;">
+            <div
+              class="col col-sm-6 col-md-3"
+              style="--w: 6; --w-sm: 6; --w-md: 3"
+            >
               <div class="card">
-                <img class="w-100" src="./assets/images/products/category3.png" alt="image-category" />
+                <img
+                  class="w-100"
+                  src="./assets/images/products/category3.png"
+                  alt="image-category"
+                />
                 <a
                   href="collection.html"
                   class="btn category__btn d-flex juistify-center align-center"
@@ -175,9 +202,16 @@
                 >
               </div>
             </div>
-            <div class="col col-sm-6 col-md-3" style="--w:6; --w-sm:6; --w-md:3;">
+            <div
+              class="col col-sm-6 col-md-3"
+              style="--w: 6; --w-sm: 6; --w-md: 3"
+            >
               <div class="card">
-                <img class="w-100" src="./assets/images/products/category4.png" alt="image-category" />
+                <img
+                  class="w-100"
+                  src="./assets/images/products/category4.png"
+                  alt="image-category"
+                />
                 <a
                   href="collection.html"
                   class="btn category__btn d-flex juistify-center align-center"
@@ -200,12 +234,12 @@
                 src="./assets/images/banner/banner1.png"
                 alt=""
               />
-              <button class="text-image__player" onclick="lightbox_open();">
+              <button class="vpop text-image__player" data-type="youtube" data-id="" data-autoplay='true'>
                 <img src="./assets/images/icon/player.svg" alt="" />
               </button>
             </div>
             <div class="text-image__content">
-                <h2 class="text-image__heading heading heading-1">
+              <h2 class="text-image__heading heading heading-1">
                 WE FOCUS ON WHAT’S REALLY IMPORTANT
               </h2>
               <p>
@@ -214,24 +248,20 @@
                 sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 consecte
               </p>
-              <a
-                href="collection.html"
-                class="btn text-image__btn"
+              <a href="collection.html" class="btn text-image__btn"
                 >DISCOVER THE STORY</a
               >
             </div>
           </div>
         </div>
-        <div id="light">
-          <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-          <video id="VisaChipCardVideo" controls>
-            <source src="./assets/video/videocamping.mp4" type="video/mp4" />
-          </video>
+        <div id="video-popup-overlay"></div>
+
+        <div id="video-popup-container">
+          <div id="video-popup-close" class="fade">&#10006;</div>
+          <div id="video-popup-iframe-container">
+            <iframe id="video-popup-iframe" width="773" height="435" src="https://www.youtube.com/embed/LWlggUg3jXc" title="Hành trình sáng tạo các tuyệt tác trang sức PNJ trong 29 năm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </div>
-
-        <div id="fade" onClick="lightbox_close();"></div>
-
-        <div></div>
       </section>
       <!-- end section text-image -->
 
@@ -251,11 +281,14 @@
                   class="product__wishlist"
                   name="addWishList"
                 >
-                  <img src="./assets/images/icon/love.svg" alt="icon-image"/>
+                  <img src="./assets/images/icon/love.svg" alt="icon-image" />
                 </button>
 
                 <a href="product-detail.html"
-                  ><img class="w-100" src="./assets/images/products/product1.png" alt="product imgage"
+                  ><img
+                    class="w-100"
+                    src="./assets/images/products/product1.png"
+                    alt="product imgage"
                 /></a>
                 <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
                 <span class="product__rice">$99.99</span>
@@ -269,10 +302,13 @@
                   class="product__wishlist"
                   name="addWishList"
                 >
-                  <img src="./assets/images/icon/love.svg" alt="icon-image"/>
+                  <img src="./assets/images/icon/love.svg" alt="icon-image" />
                 </button>
                 <a href="product-detail.html"
-                  ><img class="w-100" src="./assets/images/products/product1.png" alt="product imgage"
+                  ><img
+                    class="w-100"
+                    src="./assets/images/products/product1.png"
+                    alt="product imgage"
                 /></a>
                 <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
                 <span class="product__rice">$99.99</span>
@@ -286,11 +322,14 @@
                   class="product__wishlist"
                   name="addWishList"
                 >
-                  <img src="./assets/images/icon/love.svg" alt="icon-image"/>
+                  <img src="./assets/images/icon/love.svg" alt="icon-image" />
                 </button>
 
                 <a href="product-detail.html"
-                  ><img class="w-100" src="./assets/images/products/product1.png" alt="product imgage"
+                  ><img
+                    class="w-100"
+                    src="./assets/images/products/product1.png"
+                    alt="product imgage"
                 /></a>
                 <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
                 <span class="product__rice">$99.99</span>
@@ -299,12 +338,19 @@
             </div>
             <div class="product__item">
               <div class="product__content">
-                <button type="submit" class="product__wishlist"  name="addWishList" >
-                  <img src="./assets/images/icon/love.svg" alt="icon-image"/>
+                <button
+                  type="submit"
+                  class="product__wishlist"
+                  name="addWishList"
+                >
+                  <img src="./assets/images/icon/love.svg" alt="icon-image" />
                 </button>
 
                 <a href="product-detail.html"
-                  ><img class="w-100" src="./assets/images/products/product1.png" alt="product imgage"
+                  ><img
+                    class="w-100"
+                    src="./assets/images/products/product1.png"
+                    alt="product imgage"
                 /></a>
                 <h3 class="product__name heading heading-4">PRODUCT NAME</h3>
                 <span class="product__rice">$99.99</span>
@@ -329,7 +375,7 @@
             </p>
             <div class="banner__info d-flex">
               <a href="#">SEE MORE</a>
-              <img src="./assets/images/icon/info-next.svg" alt="next-image"/>
+              <img src="./assets/images/icon/info-next.svg" alt="next-image" />
             </div>
           </div>
         </div>
@@ -345,7 +391,7 @@
             </div>
           </div>
           <div class="row mg-t-container">
-            <div class="col" style="--w-md:6; --w-lg:3;">
+            <div class="col" style="--w-md: 6; --w-lg: 3">
               <div class="card partner__item">
                 <div class="partner__image">
                   <img src="./assets/images/icon/box.svg" alt="logo-partner" />
@@ -358,11 +404,14 @@
                 </p>
                 <div class="partner__info">
                   <a href="#"> READ MORE </a>
-                  <img src="./assets/images/icon/icon-next-black.svg" alt="next-image" />
+                  <img
+                    src="./assets/images/icon/icon-next-black.svg"
+                    alt="next-image"
+                  />
                 </div>
               </div>
             </div>
-            <div class="col" style="--w-md:6; --w-lg:3;">
+            <div class="col" style="--w-md: 6; --w-lg: 3">
               <div class="card partner__item">
                 <div class="partner__image">
                   <img src="./assets/images/icon/box.svg" alt="logo-partner" />
@@ -375,11 +424,14 @@
                 </p>
                 <div class="partner__info">
                   <a href="#"> READ MORE </a>
-                  <img src="./assets/images/icon/icon-next-black.svg" alt="next-image" />
+                  <img
+                    src="./assets/images/icon/icon-next-black.svg"
+                    alt="next-image"
+                  />
                 </div>
               </div>
             </div>
-            <div class="col" style="--w-md:6; --w-lg:3;">
+            <div class="col" style="--w-md: 6; --w-lg: 3">
               <div class="card partner__item">
                 <div class="partner__image">
                   <img src="./assets/images/icon/box.svg" alt="logo-partner" />
@@ -392,11 +444,14 @@
                 </p>
                 <div class="partner__info">
                   <a href="#"> READ MORE </a>
-                  <img src="./assets/images/icon/icon-next-black.svg" alt="next-image" />
+                  <img
+                    src="./assets/images/icon/icon-next-black.svg"
+                    alt="next-image"
+                  />
                 </div>
               </div>
             </div>
-            <div class="col" style="--w-md:6; --w-lg:3;">
+            <div class="col" style="--w-md: 6; --w-lg: 3">
               <div class="card partner__item">
                 <div class="partner__image">
                   <img src="./assets/images/icon/box.svg" alt="logo-partner" />
@@ -409,7 +464,10 @@
                 </p>
                 <div class="partner__info">
                   <a href="#"> READ MORE </a>
-                  <img src="./assets/images/icon/icon-next-black.svg" alt="next-image" />
+                  <img
+                    src="./assets/images/icon/icon-next-black.svg"
+                    alt="next-image"
+                  />
                 </div>
               </div>
             </div>
@@ -429,49 +487,37 @@
             </div>
           </div>
           <div class="row footer__content">
-            <div class="col footer__care" style="--w-md:6; --w-lg:3;">
+            <div class="col footer__care" style="--w-md: 6; --w-lg: 3">
               <h3 class="footer__heading">CUSTOMER CARE</h3>
               <ul class="footer__items">
                 <li class="footer__item">
                   <a href="#">Track your order</a>
                 </li>
                 <li class="footer__item">
-                  <a href="faq.html"
-                    >Frequent Question</a
-                  >
+                  <a href="faq.html">Frequent Question</a>
                 </li>
               </ul>
             </div>
-            <div class="col footer__information" style="--w-md:6; --w-lg:3;">
-              <h3 class="footer__heading">
-                LEGAL INFORMATION:
-              </h3>
+            <div class="col footer__information" style="--w-md: 6; --w-lg: 3">
+              <h3 class="footer__heading">LEGAL INFORMATION:</h3>
               <ul class="footer__items">
+                <li class="footer__item">Company name: De Carlo Nicholas</li>
+                <li class="footer__item">VAT number: 07020260480</li>
+                <li class="footer__item">REA: FI-674952</li>
                 <li class="footer__item">
-                    Company name: De Carlo Nicholas
-                </li>
-                <li class="footer__item">
-                  VAT number: 07020260480
-                </li>
-                <li class="footer__item">
-                  REA: FI-674952
-                </li>
-                <li class="footer__item">
-                    Registered office: Via di San Quirico a Ruballa 15, 50012,
-                    Bagno a Ripoli (FI), Italy
+                  Registered office: Via di San Quirico a Ruballa 15, 50012,
+                  Bagno a Ripoli (FI), Italy
                 </li>
               </ul>
             </div>
-            <div class="col footer__terms" style="--w-md:6; --w-lg:3;">
+            <div class="col footer__terms" style="--w-md: 6; --w-lg: 3">
               <h3 class="footer__heading">LEGAL TERMS:</h3>
               <ul class="footer__items">
                 <li class="footer__item">
                   <a href="#">Informazioni legali</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#">
-                    Condizioni generali di vendita
-                  </a>
+                  <a href="#"> Condizioni generali di vendita </a>
                 </li>
                 <li class="footer__item">
                   <a href="#">Informativa sulla privacy</a>
@@ -481,10 +527,8 @@
                 </li>
               </ul>
             </div>
-            <div class="col footer__social" style="--w-md:6; --w-lg:3;">
-              <h3 class="footer__heading">
-                SUBSCRIBE FOR NEWSLETTER
-              </h3>
+            <div class="col footer__social" style="--w-md: 6; --w-lg: 3">
+              <h3 class="footer__heading">SUBSCRIBE FOR NEWSLETTER</h3>
               <div class="footer__input">
                 <form action="#">
                   <input type="email" placeholder="Your Email" />
