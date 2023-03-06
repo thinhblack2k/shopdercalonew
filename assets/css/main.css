@@ -1053,6 +1053,14 @@ body {
     color: #BABCC4;
 }
 
+.tabs h3 {
+    color: #BABCC4;
+}
+
+.tab-item.active h3{
+    color: var(--black);
+}
+
 .tabs .line {
     position: absolute;
     left: 0;
