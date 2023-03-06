@@ -108,15 +108,21 @@
       <section class="collection__header">
         <div class="container">
           <div class="row f-space">
-            <div class="col col-xl-6 col-l">
+            <div class="col" style="--w-xl:6;">
               <p class="collection__total">
                 There are 30 products
               </p>
             </div>
-            <div class="col col-xl-6 d-flex text-center f-space">
+            <div class="col d-flex text-center f-space" style="--w-xl:6;">
               <div class="collection__sort d-flex">
-                <p class="heading heading-4 d-block">SORT BY : FROM A TO Z</p>
-                <img src="./assets/images/icon/dropblack.svg" alt="" />
+                <div class="heading heading-4 d-block">
+                  SORT BY :
+                  <select class="select-sort heading heading-4" name="select-sort" id="">
+                    <option value="">FROM A TO Z</option>
+                    <option value="">FROM Z TO A</option>
+                  </select>
+                </div>
+                <!-- <img src="./assets/images/icon/dropblack.svg" alt="" /> -->
               </div>
               <p class="heading heading-4">FILTER</p>
             </div>

@@ -1686,6 +1686,11 @@ body {
         padding-bottom: calc(58px - var(--gutter));
     }
 
+    .collection__header .select-sort {
+        border: none;
+        color: var(--black);
+    }
+
     .collection-product__item {
         padding-bottom: 60px;
     }
