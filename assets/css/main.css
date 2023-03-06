@@ -1312,6 +1312,28 @@ body {
     cursor: pointer;
 }
 
+.select {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.select-size__items {
+    width: 100%;
+    height: 50px;
+    padding: 0 18px;
+    border: solid 1px #ECECEC;
+}
+
+.dropdown-btn {
+    top: 2px;
+    right: 2px;
+    width: 47px;
+    height: 46px;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+
 .select-number {
     margin-top: 30px;
     width: 100%;
@@ -1324,15 +1346,16 @@ body {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    cursor: pointer;
+    cursor: pointer;background-color: transparent;
+    border: none;
 }
+
 
 .select-number__sum {
     left: 0;
 }
 
 .select-number__sub {
-    
     right: 0;
 }
 

@@ -75,3 +75,23 @@ function selectImages(imgs) {
 
 const listImages = document.querySelectorAll("product-detail__images--item img");
 console.log(listImages);
+
+/**
+ * Xử lý select number
+ * AUTHOR: THINHDH (02/03/2023)
+ */
+const inputNumber = document.querySelector('.select__input--number');
+console.log(inputNumber.value);
+function sumNumber() {
+  var number = inputNumber.value;
+  inputNumber.value = ++number;
+} 
+
+function subNumber() {
+  var number = inputNumber.value;
+  if(number <= 1) {
+    inputNumber.value = 1;
+  } else {
+    inputNumber.value = --number;
+  }
+}

@@ -154,30 +154,22 @@
                       <span><img src="./assets/images/icon/icon-size.svg" alt="size" style="margin-right: 10px;"/></span>Find your size
                     </div>
                   </div>
-                  <div id="select">
-                    <input
-                      class="select__input"
-                      type="text"
-                      value="50"
-                    />
-                    <img
-                      class="select__icon"
-                      src="./assets/images/icon/dropblack.svg"
-                      alt=""
-                    />
-                    <ul class="select__items">
-                      <li class="select__item">48</li>
-                      <li class="select__item">49</li>
-                      <li class="select__item">50</li>
-                      <li class="select__item">51</li>
-                      <li class="select__item">52</li>
-                    </ul>
+                  
+                  <div class="select p-relative">
+                    <select name="select-size" id="" class="select-size__items">
+                      <option class="select-size__item" value="">1</option>
+                      <option class="select-size__item" value="">2</option>
+                      <option class="select-size__item" value="">3</option>
+                    </select>
+                    <div class="dropdown-btn p-absolute d-flex juistify-center align-center">
+                      <img src="./assets/images/icon/dropblack.svg" alt="">
+                    </div>
                   </div>
                   <div class="btn-add">
                     <div class="select-number d-flex">
-                      <span class="select-number__sum d-flex juistify-center text-center">-</span>
-                        <input class="select__input text-center" type="text" value="1"/>
-                      <span class="select-number__sub d-flex juistify-center text-center" >+</span>
+                      <input value="-" type="button" class="select-number__sum d-flex juistify-center text-center" onclick="subNumber();">
+                        <input class="select__input select__input--number text-center" type="text" value="1"/>
+                      <input value="+" type="button" class="select-number__sub d-flex juistify-center text-center" onclick="sumNumber();">
                     </div>
                     <div class="btn-addtocart flex-1 d-flex">
                       <button class="btn product-detail__btn">ADD TO CART</button>
