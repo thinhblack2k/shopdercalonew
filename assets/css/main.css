@@ -1015,7 +1015,6 @@ body {
     display: grid;
     column-gap: calc(var(--gutter) * 2);
     grid-template-columns: repeat(2, 1fr);
-    /* margin-inline: calc(-1 * var(--gutter)) */
 }
 
 .collection-product__item {
@@ -1069,7 +1068,7 @@ body {
 .tab-item:hover {
     cursor: pointer;
     opacity: 1;
-    background-color: var(--gray-bg);
+    /* background-color: var(--gray-bg); */
     border-color: rgba(29, 7, 14, 0.1);
 }
 .tab-item.active h2{
@@ -1419,7 +1418,7 @@ body {
     border-bottom: solid 1px #ECECEC
 }
 
-.product-info h2 {
+.product-info h3 {
     font-size: 16px;
     font-weight: 600;
     padding: 37px 0;
