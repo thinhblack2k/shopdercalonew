@@ -17,9 +17,10 @@
     <!-- end google font -->
   </head>
   <body>
-    <div id="app">
+    <div id="detail">
       <!-- overlay -->
-      <section id="overlay"></section>
+      <div id="overlay"></div>
+      <!-- end overlay -->
       <!-- start header -->
       <header class="header">
         <div class="header__topbar">
@@ -115,7 +116,7 @@
       <section class="product-detail">
         <div class="container">
           <div class="row">
-            <div class="col col-lg-6">
+            <div class="col" style="--w-lg:6;">
               <div class="product-detail__image">
                 <img class="w-100" src="./assets/images/products/product.png" alt="product image" />
               </div>
@@ -141,7 +142,7 @@
                 </div>
               </div>
             </div>
-            <div class="col col-lg-6">
+            <div class="col" style="--w-lg:6;">
               <div class="product-detail__content">
                 <form action="#">
                   <h2 class="product-detail__name heading heading-1">
@@ -157,9 +158,9 @@
                   
                   <div class="select p-relative">
                     <select name="select-size" id="" class="select-size__items">
-                      <option class="select-size__item" value="">1</option>
-                      <option class="select-size__item" value="">2</option>
-                      <option class="select-size__item" value="">3</option>
+                      <option class="select-size__item" value="">50</option>
+                      <option class="select-size__item" value="">51</option>
+                      <option class="select-size__item" value="">52</option>
                     </select>
                     <div class="dropdown-btn p-absolute d-flex juistify-center align-center">
                       <img src="./assets/images/icon/dropblack.svg" alt="">
@@ -440,7 +441,7 @@
             </div>
           </div>
           <div class="row footer__content">
-            <div class="col col-lg-3 col-md-6 footer__care">
+            <div class="col footer__care" style="--w-md:6; --w-lg:3;">
               <h3 class="footer__heading">CUSTOMER CARE</h3>
               <ul class="footer__items">
                 <li class="footer__item">
@@ -453,7 +454,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col col-lg-3 col-md-6 footer__information">
+            <div class="col footer__information" style="--w-md:6; --w-lg:3;">
               <h3 class="footer__heading">
                 LEGAL INFORMATION:
               </h3>
@@ -473,7 +474,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col col-lg-3 col-md-6 footer__terms">
+            <div class="col footer__terms" style="--w-md:6; --w-lg:3;">
               <h3 class="footer__heading">LEGAL TERMS:</h3>
               <ul class="footer__items">
                 <li class="footer__item">
@@ -492,7 +493,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col col-lg-3 col-md-6 footer__social">
+            <div class="col footer__social" style="--w-md:6; --w-lg:3;">
               <h3 class="footer__heading">
                 SUBSCRIBE FOR NEWSLETTER
               </h3>

@@ -87,7 +87,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2;
+    z-index: 1;
     display: none;
     content: "";
   }
@@ -100,13 +100,14 @@ body {
 .header {
     color: var(--white);
     position: relative;
-    z-index: 4;
+    z-index: 3;
     box-shadow: 0px 1px 0px 0px #ECECEC;
 }
 
 .header__topbar {
     background-color: var(--black);
     padding: 0 15px;
+    z-index: 5;
 }
 
 .topbar__container {
@@ -119,6 +120,7 @@ body {
 
 .topbar__container p{
     color: var(--white);
+    letter-spacing: 2px;
 }
 
 .topbar-select {
@@ -127,6 +129,7 @@ body {
 }
 
 .topbar-select select {
+    letter-spacing: 2px;
     background: #171819;
     color: var(--white);
     border: none;
@@ -161,6 +164,7 @@ body {
 
 .nav__item {
     padding: 0 var(--gutter);
+    letter-spacing: 2px;
     list-style: none;
     display: block;
 }
@@ -579,6 +583,7 @@ body {
 .partner__text {
     text-align: center;
     color: var(--gray-t);
+    margin-top: 0px;
     margin-bottom: 30px;
 }
 
@@ -727,6 +732,7 @@ body {
 .brand__name{
     padding: 82px 0px;
     margin: 0px;
+    color: var(--black);
 }
 /* ======================= */
 
@@ -746,6 +752,10 @@ body {
     text-align: center;
     color: var(--gray-t);
     margin: 0;
+}
+
+.video-text__text{
+    margin-top: 25px;
 }
 
 .banner-history {
@@ -770,7 +780,7 @@ body {
 .banner-history p {
     margin-top: 15px;
     margin-bottom: 41px;
-    color: var(--white);
+    color: var(--gray);
 }
 
 /* === list text image === */
@@ -784,6 +794,7 @@ body {
 
 .content__container h4 {
     margin-top: 25px;
+    color: var(--black);
 }
 
 .content__container p{
@@ -885,6 +896,10 @@ body {
     margin-bottom: 11px;
 }
 
+.contact__link {
+    color: var(--gray-t);
+}
+
 .contact__time p {
     margin: 0;
     padding-top: 5px;
@@ -938,7 +953,7 @@ body {
 }
 
 .banner-care-product h3 {
-    color: var(--white);
+    color: #BABABF;
 }
 /* === product-care__text-image === */
 .product-care__text-image .row {
@@ -1144,8 +1159,14 @@ body {
     transition: max-height 0.5s;
 }
 
+.tab__footer {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--black);
+}
+
 .tab__footer a {
-    text-decoration: none;
     color: var(--black);
 }
 
@@ -1260,12 +1281,31 @@ body {
 }
 
 /* select-option */
-#select {
+.select {
     width: 100%;
-    height: 50px;
-    position: relative;
     margin-top: 20px;
 }
+
+.select-size__items {
+    width: 100%;
+    height: 50px;
+    padding: 0 18px;
+    border: solid 1px #ECECEC;
+}
+
+.select-size__items:hover {
+    cursor: pointer;
+}
+
+.dropdown-btn {
+    top: 3px;
+    right: 2px;
+    width: 47px;
+    height: 45px;
+    background-color: var(--white);
+    z-index: 1;
+}
+
 
 .select__input {
     width: 100%;
@@ -1297,10 +1337,6 @@ body {
     z-index: 1;
 }
 
-.select__items--open {
-    display: block;
-} 
-
 .select__item {
     list-style: none;
     line-height: 50px;
@@ -1311,28 +1347,6 @@ body {
     background-color: var(--gray-bg);
     cursor: pointer;
 }
-
-.select {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.select-size__items {
-    width: 100%;
-    height: 50px;
-    padding: 0 18px;
-    border: solid 1px #ECECEC;
-}
-
-.dropdown-btn {
-    top: 2px;
-    right: 2px;
-    width: 47px;
-    height: 46px;
-    background-color: var(--white);
-    z-index: 1;
-}
-
 
 .select-number {
     margin-top: 30px;
@@ -1461,6 +1475,10 @@ body {
 
     .heading-1 {
         font-size: 30px;
+    }
+
+    .heading-2 {
+        font-size: 24px;
     }
 
     .heading-4 {
@@ -1609,10 +1627,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .col-xl {
-        display: flex;
-    }
-
     .menu__button {
         display: none;
     }
@@ -1620,14 +1634,13 @@ body {
 
     .nav__items > li {
         line-height: 110px;
-        padding: 0 10px;
     }
 
     .list-text-image .row:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
-    .list-text-image .row:nth-child(even) .col-xl-7{
+    .list-text-image .row:nth-child(even) .list-text-image__text{
         padding-left: 90px;
     }
 
@@ -1708,6 +1721,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+    .col-xl {
+        display: flex;
+    }
     .text-image__items {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1715,6 +1731,12 @@ body {
         height: 0;
     }
 
+    .nav__items > li {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1400px) {
     .nav__items > li {
         padding: 0 25px;
     }

@@ -48,22 +48,6 @@ function lightbox_close() {
   lightBoxVideo.pause();
 }
 
-
-
-/**
- *  Xử lý select option
- * AUTHOR: THINHDH (01/03/2023)
- */
-
-const selectBtn = document.querySelector('#select .select__input');
-const selectBox = document.querySelector('#select .select__items');
-const selectItems = document.querySelectorAll('#select .select__item');
-
-selectBtn.addEventListener("click", () => {
-  selectBox.classList.toggle('select__items--open');
-});
-
-
 /**
  * Xử lý slider hình ảnh
  * AUTHOR: THINHDH (02/03/2023)
