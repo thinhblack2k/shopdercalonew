@@ -317,8 +317,9 @@ body {
     padding: initial;
     position: absolute;
     bottom: 10px;
-    width: 125px;
-    height: 50px;
+    min-width: 125px;
+    min-height: 50px;
+    padding: 13px 16px;
     text-decoration: none;
 }
 
@@ -932,7 +933,7 @@ body {
 }
 
 .banner-care-product {
-    height: 600px;
+    min-height: 600px;
     background-image: url(../../assets/images/slider/slider1.jpg);
     background-position: top;
     background-position: center;
@@ -941,8 +942,8 @@ body {
 }
 
 .banner-care-product .banner__content {
+    padding: 205px 0px;
     width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.55);
     z-index: 1;
 }
