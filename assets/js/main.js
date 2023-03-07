@@ -9,16 +9,17 @@ const iconMenu = document.querySelector('.icon__menu');
 const overlay = document.querySelector('.header');
 
 menuButton.addEventListener("click", ()=>{
+    overlay.classList.toggle("show");
     menu.classList.toggle("nav__items--open");
     menuButton.classList.toggle("icon__open-close");
-    overlay.classList.toggle("show");
+    
 })
 
-overlay.addEventListener("click", ()=>{
-    overlay.classList.toggle("show");
-    menu.classList.toggle("nav__items--open");
-    menuButton.classList.toggle("icon__open-close");
-});
+// overlay.addEventListener("click", ()=>{
+//     overlay.classList.toggle("show");
+//     menu.classList.toggle("nav__items--open");
+//     menuButton.classList.toggle("icon__open-close");
+// });
 
 
 /**
