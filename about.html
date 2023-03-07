@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/layout.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,16 +17,11 @@
   </head>
   <body>
     <div id="about">
-      <!-- overlay -->
-      <div id="overlay"></div>
-      <!-- end overlay -->
       <!-- start header -->
       <header class="header">
         <div class="header__topbar">
           <div class="topbar__container">
-            <p class="topbar__heading">
-              FREE SHIPPING IN ITALY
-            </p>
+            <p class="topbar__heading">FREE SHIPPING IN ITALY</p>
             <div class="topbar-select d-flex align-center">
               <select class="" name="select-qg" id="selectqg">
                 <option value="">Italian</option>
@@ -42,14 +36,21 @@
             <img src="./assets/images/logo/logo.png" alt="logo" />
           </a>
           <nav class="header__nav d-flex flex-1 juistify-center align-center">
-            <ul class="nav__items align-center d-none col-xl">
+            <ul class="nav__items align-center d-none">
               <li class="nav__item">
-                <a href="collection.html">SHOP <span><img style="margin: 0 0 2px 5px;" src="./assets/images/icon/dropblack.svg" alt=""></span></a>
+                <a href="#" class=""
+                  >SHOP
+                  <span
+                    ><img
+                      style="margin: 0 0 2px 5px"
+                      src="./assets/images/icon/dropblack.svg"
+                      alt="" /></span
+                ></a>
                 <ul class="subnav">
-                  <li class=""><a href="#">RING</a></li>
-                  <li class=""><a href="#">BRACELETS</a></li>
-                  <li class=""><a href="#">EARINGS</a></li>
-                  <li class=""><a href="#">NECKLACE</a></li>
+                  <li class="d-block"><a href="collection.html">RING</a></li>
+                  <li class="d-block"><a href="collection.html">BRACELETS</a></li>
+                  <li class="d-block"><a href="collection.html">EARINGS</a></li>
+                  <li class="d-block"><a href="collection.html">NECKLACE</a></li>
                 </ul>
               </li>
               <li class="nav__item">
@@ -86,6 +87,7 @@
                   src="./assets/images/icon/menu.svg"
                   alt="icon"
                 />
+                <img class="icon__close" src="./assets/images/icon/iconclose.svg" alt="">
               </button>
             </div>
           </div>

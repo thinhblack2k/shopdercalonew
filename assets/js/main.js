@@ -10,12 +10,14 @@ const overlay = document.querySelector('#overlay');
 
 menuButton.addEventListener("click", ()=>{
     menu.classList.toggle("nav__items--open");
+    menuButton.classList.toggle("icon__open-close");
     overlay.classList.toggle("show");
 })
 
 overlay.addEventListener("click", ()=>{
     overlay.classList.toggle("show");
     menu.classList.toggle("nav__items--open");
+    menuButton.classList.toggle("icon__open-close");
 });
 
 
