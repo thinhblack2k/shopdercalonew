@@ -6,7 +6,7 @@
 const menu = document.querySelector('.nav__items');
 const menuButton = document.querySelector('.menu__button');
 const iconMenu = document.querySelector('.icon__menu');
-const overlay = document.querySelector('#overlay');
+const overlay = document.querySelector('.header');
 
 menuButton.addEventListener("click", ()=>{
     menu.classList.toggle("nav__items--open");

@@ -484,7 +484,6 @@ body {
     padding-top: var(--gutter);
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     margin-inline: -10px;
 }
 
@@ -1156,6 +1155,7 @@ body {
     border: none;
     outline: none;
     transition: 0.4s;
+    text-align: left;
 }
 
 .panel {
